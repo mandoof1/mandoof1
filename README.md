@@ -22,8 +22,7 @@ building wisp · writing · breaking things responsibly
 <br/>
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=mandoof1&show_icons=true&count_private=true&hide_border=true&bg_color=0d1117&title_color=00ff41&text_color=c9d1d9&icon_color=00d4ff&border_radius=8" width="48%"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mandoof1&layout=compact&hide_border=true&bg_color=0d1117&title_color=00ff41&text_color=c9d1d9&border_radius=8&langs_count=8" width="48%"/>
+  <img src="stats.svg" width="88%"/>
 </div>
 
 <div align="center">
@@ -32,10 +31,6 @@ building wisp · writing · breaking things responsibly
 
 <div align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=mandoof1&bg_color=0d1117&color=00ff41&line=00d4ff&point=ff0055&area=true&hide_border=true" width="100%"/>
-</div>
-
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=mandoof1&theme=matrix&no-frame=true&no-bg=true&margin-w=8&margin-h=8&column=7"/>
 </div>
 
 <br/>
