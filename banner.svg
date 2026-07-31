@@ -1,0 +1,520 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" width="1200" height="520">
+  <defs>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="7" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="2" fill="#000000" opacity="0.22"/>
+      <rect y="2" width="4" height="2" fill="#00ff41" opacity="0.035"/>
+    </pattern>
+    <radialGradient id="vig" cx="50%" cy="42%" r="75%">
+      <stop offset="60%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.55"/>
+    </radialGradient>
+    <linearGradient id="termbg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0d1117" stop-opacity="0.92"/>
+      <stop offset="1" stop-color="#050a07" stop-opacity="0.95"/>
+    </linearGradient>
+    <style>
+      @keyframes fall {
+        0%   { transform: translateY(-70px); opacity: 0; }
+        8%   { opacity: 1; }
+        85%  { opacity: 0.9; }
+        100% { transform: translateY(560px); opacity: 0; }
+      }
+      @keyframes fadein {
+        from { opacity: 0; transform: translateY(5px); }
+        to   { opacity: 1; transform: translateY(0); }
+      }
+      @keyframes blink {
+        0%, 49%   { opacity: 1; }
+        50%, 100% { opacity: 0; }
+      }
+      @keyframes flick {
+        0%, 91.5%  { opacity: 1; transform: none; }
+        92%        { opacity: 0.15; transform: translateX(3px) skewX(2deg); }
+        93%        { opacity: 1; transform: none; }
+        95.5%      { opacity: 0.4; transform: translateX(-2px); }
+        96%        { opacity: 1; transform: none; }
+      }
+      @keyframes rshift {
+        0%, 90%   { opacity: 0; }
+        91%       { opacity: 0.75; }
+        92%       { opacity: 0; }
+        96%       { opacity: 0.5; }
+        97%       { opacity: 0; }
+      }
+      @keyframes cshift {
+        0%, 92%   { opacity: 0; }
+        93%       { opacity: 0.7; }
+        94%       { opacity: 0; }
+        97.5%     { opacity: 0.45; }
+        98.5%     { opacity: 0; }
+      }
+    </style>
+  </defs>
+
+  <!-- bg -->
+  <rect width="1200" height="520" fill="#040a06"/>
+
+  <!-- matrix rain -->
+  <text x="14" y="-103" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.0s linear -4.39s infinite">*</text>
+    <text x="14" y="-132" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.18s linear -2.16s infinite">ト</text>
+    <text x="14" y="-110" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#d8ffe8" opacity="0.95" style="animation: fall 4.53s linear -5.18s infinite">ネ</text>
+    <text x="14" y="-184" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.92s linear -3.03s infinite">ｸ</text>
+    <text x="14" y="-209" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.53s linear -4.43s infinite">ト</text>
+    <text x="14" y="-220" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.06s linear -2.77s infinite">サ</text>
+    <text x="14" y="-234" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.3s linear -5.53s infinite">ｴ</text>
+    <text x="14" y="-245" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.65s linear -3.29s infinite">ｶ</text>
+    <text x="14" y="-213" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#d8ffe8" opacity="0.95" style="animation: fall 2.6s linear -5.78s infinite">ｵ</text>
+    <text x="14" y="-230" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.18s linear -1.18s infinite">テ</text>
+    <text x="14" y="-330" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 2.43s linear -5.62s infinite">ニ</text>
+    <text x="14" y="-332" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.94s linear -4.66s infinite">ｱ</text>
+    <text x="14" y="-376" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.78s linear -1.28s infinite">シ</text>
+    <text x="14" y="-369" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.57s linear -0.3s infinite">6</text>
+    <text x="14" y="-462" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 5.13s linear -0.15s infinite">8</text>
+    <text x="14" y="-460" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.46s linear -4.79s infinite">ｷ</text>
+    <text x="52" y="-43" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 5.05s linear -5.42s infinite">ナ</text>
+    <text x="52" y="-83" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.63s linear -3.24s infinite">チ</text>
+    <text x="52" y="-96" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.6s linear -3.64s infinite">ウ</text>
+    <text x="52" y="-121" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#d8ffe8" opacity="0.95" style="animation: fall 2.56s linear -2.77s infinite">ノ</text>
+    <text x="52" y="-196" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.24s linear -3.86s infinite">チ</text>
+    <text x="52" y="-179" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 2.78s linear -2.35s infinite">2</text>
+    <text x="52" y="-194" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.02s linear -5.95s infinite">ニ</text>
+    <text x="52" y="-227" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.65s linear -5.75s infinite">1</text>
+    <text x="52" y="-322" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#d8ffe8" opacity="0.95" style="animation: fall 4.14s linear -3.78s infinite">ウ</text>
+    <text x="52" y="-275" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.2s linear -1.84s infinite">9</text>
+    <text x="52" y="-353" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.85s linear -1.35s infinite">ト</text>
+    <text x="52" y="-371" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 5.1s linear -2.28s infinite">ｵ</text>
+    <text x="90" y="-108" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#d8ffe8" opacity="0.95" style="animation: fall 4.68s linear -0.51s infinite">ｺ</text>
+    <text x="90" y="-55" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.76s linear -1.65s infinite">8</text>
+    <text x="90" y="-157" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 5.19s linear -0.22s infinite">7</text>
+    <text x="90" y="-132" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.19s linear -0.68s infinite">タ</text>
+    <text x="90" y="-231" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.61s linear -1.27s infinite">9</text>
+    <text x="90" y="-200" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.02s linear -0.62s infinite">ｹ</text>
+    <text x="90" y="-283" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.56s linear -4.03s infinite">ウ</text>
+    <text x="90" y="-305" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.23s linear -0.89s infinite">4</text>
+    <text x="90" y="-327" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 5.01s linear -4.41s infinite">イ</text>
+    <text x="90" y="-275" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#d8ffe8" opacity="0.95" style="animation: fall 2.85s linear -4.51s infinite">ｷ</text>
+    <text x="90" y="-362" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.69s linear -4.83s infinite">ｹ</text>
+    <text x="90" y="-354" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 2.47s linear -2.56s infinite">&lt;</text>
+    <text x="90" y="-341" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 2.63s linear -0.09s infinite">ト</text>
+    <text x="128" y="-50" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.32s linear -0.64s infinite">サ</text>
+    <text x="128" y="-137" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.02s linear -1.47s infinite">エ</text>
+    <text x="128" y="-164" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.32s linear -3.31s infinite">5</text>
+    <text x="128" y="-100" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 2.61s linear -5.09s infinite">ｸ</text>
+    <text x="128" y="-175" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.02s linear -0.17s infinite">&gt;</text>
+    <text x="128" y="-192" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 2.57s linear -3.3s infinite">ク</text>
+    <text x="128" y="-255" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 5.08s linear -3.13s infinite">テ</text>
+    <text x="128" y="-179" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.77s linear -2.49s infinite">6</text>
+    <text x="128" y="-284" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 2.44s linear -3.62s infinite">カ</text>
+    <text x="128" y="-239" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.7s linear -2.24s infinite">2</text>
+    <text x="128" y="-351" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.72s linear -0.07s infinite">ｹ</text>
+    <text x="128" y="-322" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 2.61s linear -1.13s infinite">ｱ</text>
+    <text x="128" y="-338" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#d8ffe8" opacity="0.95" style="animation: fall 3.57s linear -5.31s infinite">\</text>
+    <text x="166" y="-138" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 2.92s linear -0.12s infinite">8</text>
+    <text x="166" y="-112" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 2.69s linear -5.55s infinite">ナ</text>
+    <text x="166" y="-183" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.43s linear -5.97s infinite">イ</text>
+    <text x="166" y="-166" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#d8ffe8" opacity="0.95" style="animation: fall 4.96s linear -1.3s infinite">9</text>
+    <text x="166" y="-121" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.53s linear -3.17s infinite">ウ</text>
+    <text x="166" y="-130" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 5.14s linear -0.25s infinite">ｵ</text>
+    <text x="166" y="-270" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 2.63s linear -1.93s infinite">8</text>
+    <text x="166" y="-308" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 5.08s linear -0.54s infinite">ｳ</text>
+    <text x="166" y="-294" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#d8ffe8" opacity="0.95" style="animation: fall 4.49s linear -0.19s infinite">コ</text>
+    <text x="166" y="-330" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 2.86s linear -1.21s infinite">/</text>
+    <text x="166" y="-373" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.35s linear -2.24s infinite">セ</text>
+    <text x="166" y="-394" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.15s linear -3.25s infinite">カ</text>
+    <text x="166" y="-369" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.76s linear -0.91s infinite">キ</text>
+    <text x="204" y="-51" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 2.83s linear -3.96s infinite">エ</text>
+    <text x="204" y="-124" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 2.75s linear -1.2s infinite">オ</text>
+    <text x="204" y="-166" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.14s linear -3.43s infinite">ノ</text>
+    <text x="204" y="-185" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 2.65s linear -4.87s infinite">$</text>
+    <text x="204" y="-161" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 5.04s linear -3.18s infinite">ｸ</text>
+    <text x="204" y="-192" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 2.68s linear -3.34s infinite">テ</text>
+    <text x="204" y="-228" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.96s linear -1.53s infinite">ナ</text>
+    <text x="204" y="-200" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.2s linear -3.25s infinite">ｳ</text>
+    <text x="204" y="-272" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#d8ffe8" opacity="0.95" style="animation: fall 2.5s linear -1.94s infinite">\</text>
+    <text x="204" y="-261" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.6s linear -5.32s infinite">ｷ</text>
+    <text x="204" y="-337" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 2.87s linear -2.25s infinite">8</text>
+    <text x="204" y="-386" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 2.61s linear -1.14s infinite">ｺ</text>
+    <text x="204" y="-377" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 2.98s linear -3.15s infinite">ｹ</text>
+    <text x="242" y="-125" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 5.18s linear -3.55s infinite">0</text>
+    <text x="242" y="-133" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 2.9s linear -1.57s infinite">ケ</text>
+    <text x="242" y="-127" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.39s linear -1.5s infinite">キ</text>
+    <text x="242" y="-115" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.37s linear -2.48s infinite">7</text>
+    <text x="242" y="-145" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.81s linear -4.19s infinite">ヌ</text>
+    <text x="242" y="-134" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.57s linear -1.82s infinite">ノ</text>
+    <text x="242" y="-271" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.55s linear -0.61s infinite">ｲ</text>
+    <text x="242" y="-217" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.05s linear -0.41s infinite">イ</text>
+    <text x="242" y="-216" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.94s linear -5.99s infinite">ｳ</text>
+    <text x="242" y="-232" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.0s linear -5.24s infinite">*</text>
+    <text x="242" y="-337" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.09s linear -3.56s infinite">ト</text>
+    <text x="242" y="-352" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 5.1s linear -2.37s infinite">&amp;</text>
+    <text x="242" y="-343" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 2.49s linear -3.69s infinite">0</text>
+    <text x="242" y="-433" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.59s linear -1.38s infinite">&amp;</text>
+    <text x="242" y="-405" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 2.41s linear -4.31s infinite">シ</text>
+    <text x="280" y="-97" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.12s linear -1.06s infinite">ア</text>
+    <text x="280" y="-101" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.28s linear -0.17s infinite">テ</text>
+    <text x="280" y="-180" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#d8ffe8" opacity="0.95" style="animation: fall 3.5s linear -2.1s infinite">*</text>
+    <text x="280" y="-141" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.82s linear -1.59s infinite">4</text>
+    <text x="280" y="-218" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 2.92s linear -4.08s infinite">ｸ</text>
+    <text x="280" y="-248" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.53s linear -3.32s infinite">ウ</text>
+    <text x="280" y="-277" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.18s linear -3.26s infinite">5</text>
+    <text x="280" y="-248" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.23s linear -0.98s infinite">5</text>
+    <text x="280" y="-280" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.77s linear -3.24s infinite">ｳ</text>
+    <text x="280" y="-332" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#d8ffe8" opacity="0.95" style="animation: fall 3.62s linear -0.87s infinite">ｹ</text>
+    <text x="280" y="-349" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.36s linear -5.08s infinite">*</text>
+    <text x="280" y="-336" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.04s linear -1.59s infinite">ｶ</text>
+    <text x="280" y="-354" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#d8ffe8" opacity="0.95" style="animation: fall 4.77s linear -0.65s infinite">ト</text>
+    <text x="280" y="-330" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.97s linear -0.67s infinite">ｺ</text>
+    <text x="280" y="-404" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 2.94s linear -4.72s infinite">ｳ</text>
+    <text x="280" y="-394" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.84s linear -5.7s infinite">ウ</text>
+    <text x="318" y="-68" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.99s linear -0.07s infinite">ｱ</text>
+    <text x="318" y="-159" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.86s linear -0.3s infinite">オ</text>
+    <text x="318" y="-141" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.73s linear -0.79s infinite">9</text>
+    <text x="318" y="-151" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.28s linear -4.98s infinite">4</text>
+    <text x="318" y="-132" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#d8ffe8" opacity="0.95" style="animation: fall 3.64s linear -0.69s infinite">ウ</text>
+    <text x="318" y="-181" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 5.19s linear -4.23s infinite">%</text>
+    <text x="318" y="-186" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#d8ffe8" opacity="0.95" style="animation: fall 3.04s linear -4.39s infinite">サ</text>
+    <text x="318" y="-213" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#d8ffe8" opacity="0.95" style="animation: fall 3.42s linear -3.75s infinite">&amp;</text>
+    <text x="318" y="-270" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#d8ffe8" opacity="0.95" style="animation: fall 5.1s linear -2.45s infinite">2</text>
+    <text x="318" y="-275" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.84s linear -1.65s infinite">ト</text>
+    <text x="318" y="-317" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.94s linear -4.13s infinite">ク</text>
+    <text x="318" y="-339" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.81s linear -1.09s infinite">7</text>
+    <text x="318" y="-424" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.78s linear -5.93s infinite">4</text>
+    <text x="356" y="-122" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.29s linear -5.65s infinite">ケ</text>
+    <text x="356" y="-128" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.6s linear -3.84s infinite">ｵ</text>
+    <text x="356" y="-77" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.15s linear -3.7s infinite">&amp;</text>
+    <text x="356" y="-158" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.56s linear -4.72s infinite">&gt;</text>
+    <text x="356" y="-153" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.72s linear -2.01s infinite">ヌ</text>
+    <text x="356" y="-133" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.51s linear -2.7s infinite">ソ</text>
+    <text x="356" y="-239" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 5.0s linear -2.88s infinite">1</text>
+    <text x="356" y="-236" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 5.12s linear -1.54s infinite">セ</text>
+    <text x="356" y="-278" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.3s linear -5.19s infinite">ｸ</text>
+    <text x="356" y="-238" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#d8ffe8" opacity="0.95" style="animation: fall 3.12s linear -1.77s infinite">ナ</text>
+    <text x="356" y="-331" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#d8ffe8" opacity="0.95" style="animation: fall 4.56s linear -5.32s infinite">$</text>
+    <text x="356" y="-312" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 2.65s linear -5.55s infinite">7</text>
+    <text x="356" y="-425" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 2.93s linear -5.99s infinite">ｱ</text>
+    <text x="356" y="-365" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.05s linear -1.47s infinite">ｲ</text>
+    <text x="394" y="-135" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.61s linear -2.0s infinite">ク</text>
+    <text x="394" y="-62" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#d8ffe8" opacity="0.95" style="animation: fall 4.86s linear -1.73s infinite">\</text>
+    <text x="394" y="-128" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.75s linear -1.9s infinite">ト</text>
+    <text x="394" y="-114" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#d8ffe8" opacity="0.95" style="animation: fall 3.73s linear -3.73s infinite">8</text>
+    <text x="394" y="-192" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.93s linear -4.73s infinite">#</text>
+    <text x="394" y="-250" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.17s linear -2.98s infinite">#</text>
+    <text x="394" y="-275" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.36s linear -2.07s infinite">ソ</text>
+    <text x="394" y="-205" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.84s linear -3.94s infinite">カ</text>
+    <text x="394" y="-256" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.73s linear -4.64s infinite">*</text>
+    <text x="394" y="-341" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.82s linear -1.48s infinite">&lt;</text>
+    <text x="394" y="-272" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.3s linear -1.36s infinite">&lt;</text>
+    <text x="394" y="-274" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 2.76s linear -2.13s infinite">ｳ</text>
+    <text x="394" y="-388" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.16s linear -3.07s infinite">0</text>
+    <text x="432" y="-55" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 5.12s linear -0.08s infinite">&amp;</text>
+    <text x="432" y="-113" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 2.46s linear -5.71s infinite">6</text>
+    <text x="432" y="-147" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.94s linear -3.36s infinite">ｺ</text>
+    <text x="432" y="-164" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 2.95s linear -4.36s infinite">シ</text>
+    <text x="432" y="-134" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.89s linear -5.79s infinite">ｸ</text>
+    <text x="432" y="-163" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 5.17s linear -1.91s infinite">ウ</text>
+    <text x="432" y="-258" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.47s linear -1.28s infinite">&amp;</text>
+    <text x="432" y="-276" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 2.71s linear -3.35s infinite">ソ</text>
+    <text x="432" y="-295" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.25s linear -4.75s infinite">/</text>
+    <text x="432" y="-248" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.81s linear -5.01s infinite">1</text>
+    <text x="432" y="-271" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.19s linear -3.82s infinite">7</text>
+    <text x="432" y="-367" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.44s linear -3.75s infinite">ｱ</text>
+    <text x="432" y="-368" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 2.43s linear -0.01s infinite">/</text>
+    <text x="470" y="-17" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#d8ffe8" opacity="0.95" style="animation: fall 3.74s linear -1.32s infinite">チ</text>
+    <text x="470" y="-71" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.24s linear -4.98s infinite">コ</text>
+    <text x="470" y="-162" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.79s linear -0.17s infinite">カ</text>
+    <text x="470" y="-115" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#d8ffe8" opacity="0.95" style="animation: fall 4.63s linear -0.09s infinite">ノ</text>
+    <text x="470" y="-147" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.39s linear -4.9s infinite">サ</text>
+    <text x="470" y="-192" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#d8ffe8" opacity="0.95" style="animation: fall 3.17s linear -2.96s infinite">9</text>
+    <text x="470" y="-223" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.28s linear -4.25s infinite">ｸ</text>
+    <text x="470" y="-298" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 2.48s linear -3.6s infinite">3</text>
+    <text x="470" y="-226" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#d8ffe8" opacity="0.95" style="animation: fall 3.12s linear -5.49s infinite">ｷ</text>
+    <text x="470" y="-298" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.43s linear -2.71s infinite">\</text>
+    <text x="470" y="-320" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.17s linear -2.32s infinite">セ</text>
+    <text x="470" y="-322" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 2.97s linear -5.03s infinite">ｺ</text>
+    <text x="470" y="-360" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.16s linear -5.48s infinite">チ</text>
+    <text x="470" y="-407" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 2.9s linear -4.15s infinite">$</text>
+    <text x="508" y="-123" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#d8ffe8" opacity="0.95" style="animation: fall 3.95s linear -2.95s infinite">ケ</text>
+    <text x="508" y="-60" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 2.68s linear -2.8s infinite">9</text>
+    <text x="508" y="-152" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#d8ffe8" opacity="0.95" style="animation: fall 3.8s linear -5.45s infinite">2</text>
+    <text x="508" y="-96" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.49s linear -1.35s infinite">2</text>
+    <text x="508" y="-172" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.63s linear -1.53s infinite">ス</text>
+    <text x="508" y="-175" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.42s linear -3.08s infinite">ｳ</text>
+    <text x="508" y="-267" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.13s linear -0.21s infinite">オ</text>
+    <text x="508" y="-208" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.04s linear -1.03s infinite">ケ</text>
+    <text x="508" y="-298" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.65s linear -3.37s infinite">7</text>
+    <text x="508" y="-284" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.28s linear -5.71s infinite">2</text>
+    <text x="508" y="-328" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.46s linear -1.1s infinite">ｹ</text>
+    <text x="508" y="-310" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 5.18s linear -1.61s infinite">セ</text>
+    <text x="508" y="-385" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 2.78s linear -4.45s infinite">ｷ</text>
+    <text x="546" y="-120" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.55s linear -3.04s infinite">&amp;</text>
+    <text x="546" y="-104" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 2.91s linear -1.67s infinite">&lt;</text>
+    <text x="546" y="-114" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 5.0s linear -0.75s infinite">1</text>
+    <text x="546" y="-99" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.61s linear -4.26s infinite">3</text>
+    <text x="546" y="-223" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 2.57s linear -0.04s infinite">ｵ</text>
+    <text x="546" y="-199" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.22s linear -5.48s infinite">ケ</text>
+    <text x="546" y="-223" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.07s linear -4.91s infinite">ニ</text>
+    <text x="546" y="-258" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.47s linear -3.97s infinite">#</text>
+    <text x="546" y="-297" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.39s linear -1.58s infinite">ｴ</text>
+    <text x="546" y="-315" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.82s linear -5.01s infinite">ｵ</text>
+    <text x="546" y="-285" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.11s linear -2.33s infinite">ケ</text>
+    <text x="546" y="-335" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 2.7s linear -1.43s infinite">&gt;</text>
+    <text x="546" y="-382" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.58s linear -2.14s infinite">サ</text>
+    <text x="546" y="-374" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.92s linear -4.65s infinite">ア</text>
+    <text x="546" y="-436" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.14s linear -2.82s infinite">ヌ</text>
+    <text x="584" y="-57" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.64s linear -1.72s infinite">タ</text>
+    <text x="584" y="-108" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.0s linear -4.08s infinite">ｳ</text>
+    <text x="584" y="-78" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.26s linear -5.78s infinite">ｺ</text>
+    <text x="584" y="-109" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.49s linear -3.7s infinite">ウ</text>
+    <text x="584" y="-205" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.74s linear -0.79s infinite">ウ</text>
+    <text x="584" y="-175" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.31s linear -0.26s infinite">ヌ</text>
+    <text x="584" y="-161" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.28s linear -2.69s infinite">ケ</text>
+    <text x="584" y="-218" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.18s linear -1.6s infinite">&amp;</text>
+    <text x="584" y="-286" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.56s linear -2.86s infinite">5</text>
+    <text x="584" y="-262" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.03s linear -1.93s infinite">イ</text>
+    <text x="584" y="-266" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#d8ffe8" opacity="0.95" style="animation: fall 4.61s linear -1.81s infinite">カ</text>
+    <text x="584" y="-325" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 2.64s linear -1.92s infinite">\</text>
+    <text x="622" y="-138" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#d8ffe8" opacity="0.95" style="animation: fall 4.48s linear -4.84s infinite">ｶ</text>
+    <text x="622" y="-164" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.52s linear -1.05s infinite">ソ</text>
+    <text x="622" y="-75" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#d8ffe8" opacity="0.95" style="animation: fall 2.52s linear -2.9s infinite">シ</text>
+    <text x="622" y="-114" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.83s linear -4.55s infinite">ア</text>
+    <text x="622" y="-178" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.36s linear -3.64s infinite">ｵ</text>
+    <text x="622" y="-179" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 2.81s linear -0.83s infinite">キ</text>
+    <text x="622" y="-195" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 2.69s linear -3.68s infinite">6</text>
+    <text x="622" y="-236" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.93s linear -0.96s infinite">オ</text>
+    <text x="622" y="-298" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.49s linear -1.16s infinite">コ</text>
+    <text x="622" y="-227" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.01s linear -5.95s infinite">$</text>
+    <text x="622" y="-342" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.99s linear -5.06s infinite">ｵ</text>
+    <text x="622" y="-315" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.47s linear -5.17s infinite">ｴ</text>
+    <text x="622" y="-405" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.68s linear -0.65s infinite">ツ</text>
+    <text x="622" y="-346" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 2.76s linear -4.5s infinite">5</text>
+    <text x="660" y="-87" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#d8ffe8" opacity="0.95" style="animation: fall 3.3s linear -0.76s infinite">キ</text>
+    <text x="660" y="-132" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#d8ffe8" opacity="0.95" style="animation: fall 2.97s linear -4.7s infinite">カ</text>
+    <text x="660" y="-133" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 2.99s linear -3.0s infinite">&gt;</text>
+    <text x="660" y="-106" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#d8ffe8" opacity="0.95" style="animation: fall 2.48s linear -0.77s infinite">オ</text>
+    <text x="660" y="-110" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.79s linear -5.08s infinite">ア</text>
+    <text x="660" y="-215" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.63s linear -3.47s infinite">$</text>
+    <text x="660" y="-186" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 2.87s linear -2.26s infinite">オ</text>
+    <text x="660" y="-242" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 5.19s linear -5.7s infinite">ｶ</text>
+    <text x="660" y="-277" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.81s linear -1.83s infinite">チ</text>
+    <text x="660" y="-282" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.45s linear -4.52s infinite">5</text>
+    <text x="660" y="-253" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.39s linear -1.75s infinite">セ</text>
+    <text x="660" y="-305" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.15s linear -4.62s infinite">&gt;</text>
+    <text x="660" y="-308" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 2.67s linear -5.08s infinite">テ</text>
+    <text x="660" y="-446" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.06s linear -4.87s infinite">$</text>
+    <text x="660" y="-436" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.48s linear -5.5s infinite">ト</text>
+    <text x="698" y="-68" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#d8ffe8" opacity="0.95" style="animation: fall 4.43s linear -4.53s infinite">&gt;</text>
+    <text x="698" y="-125" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.95s linear -1.94s infinite">#</text>
+    <text x="698" y="-146" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.11s linear -5.59s infinite">ツ</text>
+    <text x="698" y="-94" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.11s linear -4.25s infinite">%</text>
+    <text x="698" y="-232" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.54s linear -3.78s infinite">エ</text>
+    <text x="698" y="-211" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.96s linear -5.52s infinite">$</text>
+    <text x="698" y="-232" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.93s linear -3.03s infinite">ウ</text>
+    <text x="698" y="-215" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.65s linear -5.22s infinite">タ</text>
+    <text x="698" y="-303" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.87s linear -4.03s infinite">タ</text>
+    <text x="698" y="-344" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.87s linear -4.02s infinite">コ</text>
+    <text x="698" y="-347" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.47s linear -0.24s infinite">8</text>
+    <text x="698" y="-383" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 5.05s linear -5.81s infinite">ト</text>
+    <text x="698" y="-305" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#d8ffe8" opacity="0.95" style="animation: fall 2.92s linear -4.52s infinite">ト</text>
+    <text x="698" y="-382" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.46s linear -5.59s infinite">3</text>
+    <text x="698" y="-434" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.71s linear -0.02s infinite">イ</text>
+    <text x="698" y="-488" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#d8ffe8" opacity="0.95" style="animation: fall 3.97s linear -1.88s infinite">ア</text>
+    <text x="736" y="-108" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.62s linear -5.58s infinite">5</text>
+    <text x="736" y="-57" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.27s linear -4.35s infinite">ツ</text>
+    <text x="736" y="-181" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.7s linear -1.0s infinite">イ</text>
+    <text x="736" y="-113" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.94s linear -5.64s infinite">#</text>
+    <text x="736" y="-171" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.29s linear -4.01s infinite">5</text>
+    <text x="736" y="-143" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.65s linear -2.19s infinite">ｵ</text>
+    <text x="736" y="-275" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.96s linear -4.98s infinite">ｸ</text>
+    <text x="736" y="-204" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#d8ffe8" opacity="0.95" style="animation: fall 2.82s linear -5.03s infinite">4</text>
+    <text x="736" y="-301" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.93s linear -1.2s infinite">ｸ</text>
+    <text x="736" y="-316" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.95s linear -3.24s infinite">%</text>
+    <text x="736" y="-356" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.92s linear -4.67s infinite">$</text>
+    <text x="736" y="-385" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#d8ffe8" opacity="0.95" style="animation: fall 3.18s linear -5.7s infinite">テ</text>
+    <text x="774" y="-136" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.7s linear -1.65s infinite">0</text>
+    <text x="774" y="-91" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 5.11s linear -2.65s infinite">ニ</text>
+    <text x="774" y="-77" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.59s linear -1.62s infinite">シ</text>
+    <text x="774" y="-100" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.13s linear -5.36s infinite">ヌ</text>
+    <text x="774" y="-199" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 5.05s linear -4.2s infinite">8</text>
+    <text x="774" y="-169" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 2.72s linear -0.8s infinite">カ</text>
+    <text x="774" y="-270" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#d8ffe8" opacity="0.95" style="animation: fall 3.43s linear -2.84s infinite">ｺ</text>
+    <text x="774" y="-205" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.52s linear -0.26s infinite">ニ</text>
+    <text x="774" y="-237" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#d8ffe8" opacity="0.95" style="animation: fall 2.62s linear -4.16s infinite">チ</text>
+    <text x="774" y="-252" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 2.65s linear -1.16s infinite">ｷ</text>
+    <text x="774" y="-315" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.19s linear -4.74s infinite">0</text>
+    <text x="774" y="-287" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 2.48s linear -5.93s infinite">ソ</text>
+    <text x="774" y="-336" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#d8ffe8" opacity="0.95" style="animation: fall 3.35s linear -3.73s infinite">シ</text>
+    <text x="812" y="-140" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.52s linear -2.82s infinite">4</text>
+    <text x="812" y="-39" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.12s linear -4.45s infinite">&gt;</text>
+    <text x="812" y="-145" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.13s linear -0.4s infinite">ｷ</text>
+    <text x="812" y="-204" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 2.63s linear -0.32s infinite">ヌ</text>
+    <text x="812" y="-198" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.89s linear -1.59s infinite">シ</text>
+    <text x="812" y="-157" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.11s linear -2.9s infinite">3</text>
+    <text x="812" y="-270" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.45s linear -3.35s infinite">2</text>
+    <text x="812" y="-192" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#d8ffe8" opacity="0.95" style="animation: fall 4.58s linear -4.69s infinite">$</text>
+    <text x="812" y="-284" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 2.57s linear -4.58s infinite">ク</text>
+    <text x="812" y="-260" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.26s linear -3.84s infinite">セ</text>
+    <text x="812" y="-309" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#d8ffe8" opacity="0.95" style="animation: fall 5.06s linear -0.15s infinite">7</text>
+    <text x="812" y="-403" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.35s linear -5.29s infinite">2</text>
+    <text x="812" y="-318" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.36s linear -0.35s infinite">0</text>
+    <text x="812" y="-361" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.33s linear -5.36s infinite">ナ</text>
+    <text x="812" y="-476" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.34s linear -4.89s infinite">&gt;</text>
+    <text x="850" y="-90" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.62s linear -3.22s infinite">ク</text>
+    <text x="850" y="-101" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 2.41s linear -5.2s infinite">4</text>
+    <text x="850" y="-187" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.17s linear -5.91s infinite">ｴ</text>
+    <text x="850" y="-156" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 5.04s linear -2.21s infinite">/</text>
+    <text x="850" y="-189" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 2.42s linear -1.26s infinite">9</text>
+    <text x="850" y="-137" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.31s linear -1.91s infinite">7</text>
+    <text x="850" y="-219" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.04s linear -4.94s infinite">シ</text>
+    <text x="850" y="-180" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 2.81s linear -1.59s infinite">ｹ</text>
+    <text x="850" y="-274" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.06s linear -3.89s infinite">1</text>
+    <text x="850" y="-350" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.11s linear -0.02s infinite">コ</text>
+    <text x="850" y="-250" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.75s linear -0.29s infinite">オ</text>
+    <text x="850" y="-379" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#d8ffe8" opacity="0.95" style="animation: fall 3.37s linear -3.38s infinite">%</text>
+    <text x="850" y="-328" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.42s linear -3.42s infinite">3</text>
+    <text x="850" y="-404" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.19s linear -3.94s infinite">ソ</text>
+    <text x="888" y="-108" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.06s linear -0.34s infinite">キ</text>
+    <text x="888" y="-133" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.24s linear -5.19s infinite">ｷ</text>
+    <text x="888" y="-145" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 2.82s linear -0.63s infinite">8</text>
+    <text x="888" y="-153" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#d8ffe8" opacity="0.95" style="animation: fall 4.92s linear -0.88s infinite">ｹ</text>
+    <text x="888" y="-133" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.61s linear -3.52s infinite">ネ</text>
+    <text x="888" y="-134" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#d8ffe8" opacity="0.95" style="animation: fall 4.76s linear -3.51s infinite">ｵ</text>
+    <text x="888" y="-284" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.07s linear -5.11s infinite">ｲ</text>
+    <text x="888" y="-283" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 2.89s linear -1.15s infinite">オ</text>
+    <text x="888" y="-264" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#d8ffe8" opacity="0.95" style="animation: fall 2.51s linear -3.74s infinite">0</text>
+    <text x="888" y="-353" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#d8ffe8" opacity="0.95" style="animation: fall 2.92s linear -1.78s infinite">カ</text>
+    <text x="888" y="-271" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 2.6s linear -1.84s infinite">&lt;</text>
+    <text x="888" y="-307" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.12s linear -0.97s infinite">オ</text>
+    <text x="888" y="-300" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 2.57s linear -0.7s infinite">ｺ</text>
+    <text x="926" y="-90" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.83s linear -3.65s infinite">ス</text>
+    <text x="926" y="-95" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 2.65s linear -2.63s infinite">ニ</text>
+    <text x="926" y="-113" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.59s linear -0.69s infinite">8</text>
+    <text x="926" y="-132" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#d8ffe8" opacity="0.95" style="animation: fall 3.72s linear -1.09s infinite">&gt;</text>
+    <text x="926" y="-136" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#d8ffe8" opacity="0.95" style="animation: fall 4.96s linear -3.57s infinite">$</text>
+    <text x="926" y="-210" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.06s linear -4.14s infinite">チ</text>
+    <text x="926" y="-170" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 2.53s linear -3.99s infinite">エ</text>
+    <text x="926" y="-286" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.0s linear -5.98s infinite">コ</text>
+    <text x="926" y="-281" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.07s linear -5.75s infinite">3</text>
+    <text x="926" y="-241" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.68s linear -4.23s infinite">シ</text>
+    <text x="926" y="-283" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#d8ffe8" opacity="0.95" style="animation: fall 2.72s linear -5.58s infinite">ス</text>
+    <text x="926" y="-327" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#d8ffe8" opacity="0.95" style="animation: fall 3.34s linear -3.15s infinite">カ</text>
+    <text x="964" y="-92" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.88s linear -3.49s infinite">7</text>
+    <text x="964" y="-105" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.91s linear -1.06s infinite">オ</text>
+    <text x="964" y="-168" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.1s linear -3.53s infinite">カ</text>
+    <text x="964" y="-208" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.84s linear -4.1s infinite">ケ</text>
+    <text x="964" y="-110" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 2.59s linear -4.57s infinite">サ</text>
+    <text x="964" y="-141" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.78s linear -0.18s infinite">ナ</text>
+    <text x="964" y="-267" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 2.46s linear -3.37s infinite">コ</text>
+    <text x="964" y="-242" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#d8ffe8" opacity="0.95" style="animation: fall 4.54s linear -2.05s infinite">ｷ</text>
+    <text x="964" y="-215" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.17s linear -0.31s infinite">ｳ</text>
+    <text x="964" y="-322" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#d8ffe8" opacity="0.95" style="animation: fall 4.39s linear -3.92s infinite">チ</text>
+    <text x="964" y="-373" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 2.73s linear -5.35s infinite">カ</text>
+    <text x="964" y="-359" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.13s linear -0.49s infinite">カ</text>
+    <text x="964" y="-421" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 2.77s linear -0.06s infinite">テ</text>
+    <text x="964" y="-375" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.43s linear -1.75s infinite">7</text>
+    <text x="1002" y="-121" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 5.0s linear -3.78s infinite">ウ</text>
+    <text x="1002" y="-145" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.18s linear -2.19s infinite">セ</text>
+    <text x="1002" y="-106" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 2.77s linear -5.15s infinite">エ</text>
+    <text x="1002" y="-97" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.51s linear -3.34s infinite">ｲ</text>
+    <text x="1002" y="-151" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 2.49s linear -3.64s infinite">1</text>
+    <text x="1002" y="-231" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.39s linear -5.32s infinite">ア</text>
+    <text x="1002" y="-224" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.79s linear -2.51s infinite">&gt;</text>
+    <text x="1002" y="-206" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.68s linear -2.28s infinite">/</text>
+    <text x="1002" y="-298" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#d8ffe8" opacity="0.95" style="animation: fall 4.77s linear -1.48s infinite">ｳ</text>
+    <text x="1002" y="-259" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 2.85s linear -3.54s infinite">ｱ</text>
+    <text x="1002" y="-352" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 2.75s linear -1.59s infinite">2</text>
+    <text x="1002" y="-300" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.32s linear -1.37s infinite">シ</text>
+    <text x="1002" y="-301" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.6s linear -5.79s infinite">チ</text>
+    <text x="1002" y="-331" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.13s linear -5.89s infinite">ｺ</text>
+    <text x="1002" y="-416" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#d8ffe8" opacity="0.95" style="animation: fall 4.05s linear -4.91s infinite">ツ</text>
+    <text x="1002" y="-383" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#d8ffe8" opacity="0.95" style="animation: fall 3.08s linear -3.61s infinite">ア</text>
+    <text x="1040" y="-121" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.46s linear -5.09s infinite">エ</text>
+    <text x="1040" y="-72" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.4s linear -5.32s infinite">&amp;</text>
+    <text x="1040" y="-105" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.55s linear -3.97s infinite">ト</text>
+    <text x="1040" y="-191" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.16s linear -2.88s infinite">ｲ</text>
+    <text x="1040" y="-127" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#d8ffe8" opacity="0.95" style="animation: fall 3.8s linear -1.81s infinite">%</text>
+    <text x="1040" y="-222" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 2.67s linear -2.96s infinite">ア</text>
+    <text x="1040" y="-172" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.22s linear -5.08s infinite">ｸ</text>
+    <text x="1040" y="-261" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 2.63s linear -5.4s infinite">オ</text>
+    <text x="1040" y="-249" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.72s linear -3.4s infinite">ニ</text>
+    <text x="1040" y="-316" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.6s linear -4.92s infinite">ネ</text>
+    <text x="1040" y="-373" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.32s linear -3.8s infinite">6</text>
+    <text x="1040" y="-316" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.31s linear -4.03s infinite">ノ</text>
+    <text x="1040" y="-336" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.72s linear -2.07s infinite">タ</text>
+    <text x="1078" y="-88" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.89s linear -5.55s infinite">ノ</text>
+    <text x="1078" y="-109" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 5.02s linear -4.85s infinite">タ</text>
+    <text x="1078" y="-116" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 5.07s linear -2.6s infinite">ｸ</text>
+    <text x="1078" y="-201" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 2.92s linear -3.94s infinite">ソ</text>
+    <text x="1078" y="-160" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#d8ffe8" opacity="0.95" style="animation: fall 4.14s linear -0.97s infinite">ｷ</text>
+    <text x="1078" y="-153" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.7s linear -5.98s infinite">ｷ</text>
+    <text x="1078" y="-168" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.06s linear -4.32s infinite">9</text>
+    <text x="1078" y="-285" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.54s linear -3.29s infinite">テ</text>
+    <text x="1078" y="-208" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 2.58s linear -2.73s infinite">テ</text>
+    <text x="1078" y="-315" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.36s linear -2.0s infinite">ｹ</text>
+    <text x="1078" y="-327" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.89s linear -5.78s infinite">ア</text>
+    <text x="1078" y="-280" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.75s linear -2.59s infinite">コ</text>
+    <text x="1078" y="-387" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.77s linear -4.1s infinite">タ</text>
+    <text x="1078" y="-382" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.56s linear -5.66s infinite">6</text>
+    <text x="1078" y="-373" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.58s linear -5.11s infinite">エ</text>
+    <text x="1116" y="-75" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 5.19s linear -1.61s infinite">シ</text>
+    <text x="1116" y="-105" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.6s linear -0.97s infinite">ｸ</text>
+    <text x="1116" y="-147" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 5.09s linear -2.06s infinite">ニ</text>
+    <text x="1116" y="-97" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#d8ffe8" opacity="0.95" style="animation: fall 2.81s linear -4.65s infinite">0</text>
+    <text x="1116" y="-195" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#d8ffe8" opacity="0.95" style="animation: fall 4.18s linear -4.22s infinite">5</text>
+    <text x="1116" y="-239" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 3.75s linear -0.45s infinite">チ</text>
+    <text x="1116" y="-185" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#d8ffe8" opacity="0.95" style="animation: fall 3.03s linear -0.54s infinite">ｵ</text>
+    <text x="1116" y="-229" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.41s linear -1.85s infinite">エ</text>
+    <text x="1116" y="-250" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 2.57s linear -2.7s infinite">ケ</text>
+    <text x="1116" y="-265" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.09s linear -0.57s infinite">テ</text>
+    <text x="1116" y="-274" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 2.42s linear -4.5s infinite">ｶ</text>
+    <text x="1116" y="-305" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.11s linear -5.47s infinite">&gt;</text>
+    <text x="1116" y="-414" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.29s linear -1.3s infinite">*</text>
+    <text x="1116" y="-402" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="20" fill="#00ff41" opacity="0.55" style="animation: fall 4.84s linear -3.25s infinite">ｵ</text>
+
+  <!-- scanlines + vignette -->
+  <rect width="1200" height="520" fill="url(#scan)"/>
+  <rect width="1200" height="520" fill="url(#vig)"/>
+
+  <!-- glitch title -->
+  <g text-anchor="middle">
+    <text x="600" y="152" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="110" font-weight="bold" letter-spacing="12"
+          fill="#00ff41" filter="url(#glow)" opacity="0.3">MANDOOF</text>
+    <text x="597" y="152" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="110" font-weight="bold" letter-spacing="12"
+          fill="#ff0055" style="animation: rshift 3.4s linear infinite">MANDOOF</text>
+    <text x="603" y="152" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="110" font-weight="bold" letter-spacing="12"
+          fill="#00d4ff" style="animation: cshift 3.4s linear infinite">MANDOOF</text>
+    <text x="600" y="152" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="110" font-weight="bold" letter-spacing="12"
+          fill="#00ff41" style="animation: flick 3.4s linear infinite">MANDOOF</text>
+    <text x="600" y="206" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="21" letter-spacing="7" fill="#00d4ff"
+          style="animation: fadein 0.8s ease 0.3s both">SECURITY RESEARCHER · NOVELIST · ENCRYPTED EVERYTHING</text>
+  </g>
+
+  <!-- terminal window -->
+  <g>
+    <rect x="180" y="262" width="840" height="226" rx="10" fill="url(#termbg)" stroke="#00ff41" stroke-opacity="0.25"/>
+    <rect x="180" y="262" width="840" height="34" rx="10" fill="#0d1117" stroke="#00ff41" stroke-opacity="0.15"/>
+    <circle cx="206" cy="279" r="5.5" fill="#ff5f57"/>
+    <circle cx="228" cy="279" r="5.5" fill="#febc2e"/>
+    <circle cx="250" cy="279" r="5.5" fill="#28c840"/>
+    <text x="600" y="284" text-anchor="middle" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="13" fill="#8b949e">root@matrix: ~/profile</text>
+    <text x="206" y="322" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="15" fill="#e6edf3" style="animation: fadein 0.3s ease 0.6s both">$ ./init.sh --stealth</text>
+    <text x="206" y="342" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="15" fill="#00ff41" style="animation: fadein 0.3s ease 1.15s both">[ ok ] kernel modules ................ ok</text>
+    <text x="206" y="362" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="15" fill="#00ff41" style="animation: fadein 0.3s ease 1.7s both">[ ok ] c2 payloads ................... 3/3</text>
+    <text x="206" y="382" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="15" fill="#00ff41" style="animation: fadein 0.3s ease 2.25s both">[ ok ] honeypots ..................... 7 traps</text>
+    <text x="206" y="402" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="15" fill="#00ff41" style="animation: fadein 0.3s ease 2.8s both">[ ok ] media pipeline ................ up</text>
+    <text x="206" y="422" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="15" fill="#00ff41" style="animation: fadein 0.3s ease 3.35s both">[ ok ] uplink encrypted ............. x25519</text>
+    <text x="206" y="442" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="15" fill="#00ff41" style="animation: fadein 0.3s ease 3.9s both">[ ok ] memory daemon ................ online</text>
+    <text x="206" y="462" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="15" fill="#e6edf3" style="animation: fadein 0.3s ease 4.45s both">$ whoami</text>
+    <text x="206" y="482" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="15" fill="#00d4ff" style="animation: fadein 0.3s ease 5.0s both">hadi — security researcher &amp; novelist</text>
+    <text x="206" y="502" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="15" fill="#00ff41" style="animation: fadein 0.3s ease 5.55s both">mandoof@matrix:~$</text>
+    <rect x="356" y="490" width="9" height="15" fill="#00ff41" style="animation: blink 1s steps(1) 5.5s infinite" opacity="0"/>
+  </g>
+
+  <text x="180" y="508" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="12" fill="#3d4f46">gh: mandoof1 · uptime: ∞ · stay paranoid</text>
+</svg>
