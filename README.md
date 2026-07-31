@@ -22,6 +22,12 @@ building wisp · writing · breaking things responsibly
 <br/>
 
 <div align="center">
+  <img src="status.svg" width="88%"/>
+</div>
+
+<br/>
+
+<div align="center">
   <img src="stats.svg" width="88%"/>
 </div>
 
@@ -45,6 +51,14 @@ building wisp · writing · breaking things responsibly
 | [Exim RCE](https://github.com/mandoof1/Exim-Remote-Code-Execution) | remote code execution research | [![stars](https://img.shields.io/github/stars/mandoof1/Exim-Remote-Code-Execution?style=for-the-badge&color=00ff41)](https://github.com/mandoof1/Exim-Remote-Code-Execution) |
 | [honeypot-ui](https://github.com/mandoof1/honeypot-ui) | honeypot dashboard | [![stars](https://img.shields.io/github/stars/mandoof1/honeypot-ui?style=for-the-badge&color=00ff41)](https://github.com/mandoof1/honeypot-ui) |
 | [sharpemu](https://github.com/mandoof1/sharpemu) | experimental PlayStation 5 emulator | [![stars](https://img.shields.io/github/stars/mandoof1/sharpemu?style=for-the-badge&color=00ff41)](https://github.com/mandoof1/sharpemu) |
+
+<br/>
+
+## ▸ medallions
+
+<div align="center">
+  <img src="badges.svg" width="100%"/>
+</div>
 
 <br/>
 

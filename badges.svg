@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 846 132" width="846" height="132">
+  <defs>
+    <style>
+      @keyframes led {
+        0%, 100% { opacity: 1; }
+        50%      { opacity: 0.1; }
+      }
+    </style>
+  </defs>
+  <rect width="846" height="132" rx="10" fill="#0d1117"/><rect x="1" y="1" width="844" height="130" rx="9" fill="none" stroke="#00ff41" stroke-opacity="0.28"/>
+  <rect x="33" y="16" width="120" height="100" rx="8" fill="#0d1117" stroke="#00ff41" stroke-opacity="0.3"/>
+    <circle cx="141" cy="28" r="3" fill="#00ff41" style="animation: led 1.2s ease-in-out infinite"/>
+    <text x="93" y="58" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" fill="#00d4ff">★</text>
+    <text x="93" y="80" text-anchor="middle" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="12" font-weight="bold" letter-spacing="1" fill="#00ff41">C2 ARCHITECT</text>
+    <text x="93" y="98" text-anchor="middle" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="10" fill="#8b949e">wisp</text>
+    <rect x="165" y="16" width="120" height="100" rx="8" fill="#0d1117" stroke="#00ff41" stroke-opacity="0.3"/>
+    <circle cx="273" cy="28" r="3" fill="#00ff41" style="animation: led 1.9s ease-in-out infinite"/>
+    <text x="225" y="58" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" fill="#00d4ff">☠</text>
+    <text x="225" y="80" text-anchor="middle" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="12" font-weight="bold" letter-spacing="1" fill="#00ff41">EXPLOIT ENGINEER</text>
+    <text x="225" y="98" text-anchor="middle" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="10" fill="#8b949e">exim rce</text>
+    <rect x="297" y="16" width="120" height="100" rx="8" fill="#0d1117" stroke="#00ff41" stroke-opacity="0.3"/>
+    <circle cx="405" cy="28" r="3" fill="#00ff41" style="animation: led 0.8s ease-in-out infinite"/>
+    <text x="357" y="58" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" fill="#00d4ff">◈</text>
+    <text x="357" y="80" text-anchor="middle" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="12" font-weight="bold" letter-spacing="1" fill="#00ff41">MEMORY WIZARD</text>
+    <text x="357" y="98" text-anchor="middle" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="10" fill="#8b949e">amnis</text>
+    <rect x="429" y="16" width="120" height="100" rx="8" fill="#0d1117" stroke="#00ff41" stroke-opacity="0.3"/>
+    <circle cx="537" cy="28" r="3" fill="#00ff41" style="animation: led 2.7s ease-in-out infinite"/>
+    <text x="489" y="58" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" fill="#00d4ff">⬡</text>
+    <text x="489" y="80" text-anchor="middle" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="12" font-weight="bold" letter-spacing="1" fill="#00ff41">BROWSER GHOST</text>
+    <text x="489" y="98" text-anchor="middle" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="10" fill="#8b949e">browseye</text>
+    <rect x="561" y="16" width="120" height="100" rx="8" fill="#0d1117" stroke="#00ff41" stroke-opacity="0.3"/>
+    <circle cx="669" cy="28" r="3" fill="#00ff41" style="animation: led 1.5s ease-in-out infinite"/>
+    <text x="621" y="58" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" fill="#00d4ff">◆</text>
+    <text x="621" y="80" text-anchor="middle" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="12" font-weight="bold" letter-spacing="1" fill="#00ff41">HONEYPOT HERDER</text>
+    <text x="621" y="98" text-anchor="middle" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="10" fill="#8b949e">deception</text>
+    <rect x="693" y="16" width="120" height="100" rx="8" fill="#0d1117" stroke="#00ff41" stroke-opacity="0.3"/>
+    <circle cx="801" cy="28" r="3" fill="#00ff41" style="animation: led 2.1s ease-in-out infinite"/>
+    <text x="753" y="58" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" fill="#00d4ff">✎</text>
+    <text x="753" y="80" text-anchor="middle" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="12" font-weight="bold" letter-spacing="1" fill="#00ff41">NOVELIST</text>
+    <text x="753" y="98" text-anchor="middle" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="10" fill="#8b949e">fiction</text>
+</svg>
