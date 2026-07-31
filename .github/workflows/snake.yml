@@ -1,0 +1,24 @@
+name: generate-snake
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: Platane/snk@v3
+        with:
+          github_user_name: mandoof1
+          outputs: |
+            dist/snake.svg?color_snake=00ff41&color_dots=0d1117,1f6feb,00ff41,00d4ff,ff0055
+      - uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: dist
+          publish_branch: output
