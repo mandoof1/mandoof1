@@ -15,7 +15,7 @@
 <text x="376" y="128" text-anchor="end" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="12" letter-spacing="2" fill="#8b949e">REPOS</text>
 <text x="552" y="104" text-anchor="end" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="30" font-weight="bold" fill="#00ff41" filter="url(#glow2)">1</text>
 <text x="552" y="128" text-anchor="end" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="12" letter-spacing="2" fill="#8b949e">FORKS</text>
-<text x="728" y="104" text-anchor="end" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="30" font-weight="bold" fill="#00ff41" filter="url(#glow2)">6</text>
+<text x="728" y="104" text-anchor="end" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="30" font-weight="bold" fill="#00ff41" filter="url(#glow2)">7</text>
 <text x="728" y="128" text-anchor="end" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="12" letter-spacing="2" fill="#8b949e">FOLLOWERS</text>
 <text x="904" y="104" text-anchor="end" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="30" font-weight="bold" fill="#00ff41" filter="url(#glow2)">0</text>
 <text x="904" y="128" text-anchor="end" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="12" letter-spacing="2" fill="#8b949e">GISTS</text>
@@ -45,5 +45,5 @@
 <rect x="180" y="310" width="6" height="8" rx="4" fill="url(#bar)"/>
 <text x="720" y="320" text-anchor="end" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="12" fill="#8b949e">0.4%</text>
 <rect x="40" y="336" width="800" height="1" fill="#00ff41" opacity="0.2"/>
-<text x="40" y="352" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="11" fill="#3d4f46">sync: 2026-08-26 03:01 UTC · self-hosted · no third-party trackers</text>
+<text x="40" y="352" font-family="Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace" font-size="11" fill="#3d4f46">sync: 2026-08-27 12:19 UTC · self-hosted · no third-party trackers</text>
 </svg>
