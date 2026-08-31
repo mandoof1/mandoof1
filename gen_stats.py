@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Generate stats.svg — self-hosted matrix-themed GitHub stats card.
+"""Generate stats.svg — a self-hosted GitHub stats card for the profile README.
 
-Fetches public profile data from the GitHub REST API and renders an SVG
-matching banner.svg's CRT/matrix aesthetic. No third-party widget services.
+Fetches public profile data from the GitHub REST API and renders a static SVG in
+the GitHub-native dark palette. No third-party widget services.
 
 Run locally or inside a GitHub Action (uses GITHUB_TOKEN when present).
 """
@@ -13,16 +13,17 @@ import urllib.request
 from datetime import datetime, timezone
 
 USER = "mandoof1"
-FONT = "Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace"
+FONT = "'SFMono-Regular', 'Cascadia Code', 'Fira Code', Consolas, 'Courier New', monospace"
 
-GREEN = "#00ff41"
-CYAN = "#00d4ff"
-RED = "#ff0055"
+GREEN = "#3fb950"
+BLUE = "#58a6ff"
+PURPLE = "#bc8cff"
 DIM = "#8b949e"
 FG = "#e6edf3"
 DARK = "#0d1117"
-BAR_BG = "#161b22"
-FOOTER = "#3d4f46"
+BAR_BG = "#21262d"
+BORDER = "#30363d"
+FOOTER = "#484f58"
 
 
 def gh(path: str) -> dict:
@@ -39,16 +40,15 @@ def gh(path: str) -> dict:
 def main() -> None:
     user = gh(f"/users/{USER}")
     repos = gh(f"/users/{USER}/repos?per_page=100&sort=updated")
+    owned = [r for r in repos if not r["fork"]]
 
-    stars = sum(r["stargazers_count"] for r in repos)
-    forks = sum(r["forks_count"] for r in repos)
+    stars = sum(r["stargazers_count"] for r in owned)
     followers = user["followers"]
-    following = user["following"]
-    gists = user["public_gists"]
+    since = user["created_at"][:4]
 
-    # language share by bytes
+    # language share by bytes — owned (non-fork) repos only
     lang_bytes: dict[str, int] = {}
-    for r in repos:
+    for r in owned:
         try:
             langs = gh(f"/repos/{USER}/{r['name']}/languages")
             for lang, n in langs.items():
@@ -56,76 +56,70 @@ def main() -> None:
         except Exception:
             continue
     total = sum(lang_bytes.values()) or 1
-    top = sorted(lang_bytes.items(), key=lambda kv: kv[1], reverse=True)[:6]
+    top = sorted(lang_bytes.items(), key=lambda kv: kv[1], reverse=True)[:5]
 
-    sync = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+    sync = datetime.now(timezone.utc).strftime("%Y-%m-%d")
 
     # ---------- layout ----------
-    W, H = 880, 360
+    W, H = 880, 350
+    MX = 44
     cells = [
+        ("REPOS", str(len(owned))),
         ("STARS", str(stars)),
-        ("REPOS", str(user["public_repos"])),
-        ("FORKS", str(forks)),
         ("FOLLOWERS", str(followers)),
-        ("GISTS", str(gists)),
+        ("SINCE", since),
     ]
-    cell_x = [40, 216, 392, 568, 744]
-    cell_w = 176
+    n = len(cells)
+    span = W - 2 * MX
+    step = span / n
 
-    parts: list[str] = []
-    parts.append(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}">')
-    parts.append("<defs>")
-    parts.append('<linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">')
-    parts.append(f'<stop offset="0" stop-color="{GREEN}"/><stop offset="1" stop-color="{CYAN}"/>')
-    parts.append("</linearGradient>")
-    parts.append('<filter id="glow2" x="-20%" y="-20%" width="140%" height="140%">'
-                 '<feGaussianBlur stdDeviation="2.5" result="b"/>'
-                 '<feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>')
-    parts.append("</defs>")
+    p: list[str] = []
+    p.append(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" aria-label="GitHub stats for {USER}">')
+    p.append("<defs>")
+    p.append('<linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">'
+             f'<stop offset="0" stop-color="{GREEN}"/><stop offset="1" stop-color="{BLUE}"/>'
+             "</linearGradient>")
+    p.append("</defs>")
 
-    # bg + frame
-    parts.append(f'<rect width="{W}" height="{H}" rx="10" fill="{DARK}"/>')
-    parts.append(f'<rect x="1" y="1" width="{W-2}" height="{H-2}" rx="9" fill="none" '
-                 f'stroke="{GREEN}" stroke-opacity="0.28"/>')
+    p.append(f'<rect width="{W}" height="{H}" rx="12" fill="{DARK}"/>')
+    p.append(f'<rect x="0.5" y="0.5" width="{W-1}" height="{H-1}" rx="12" fill="none" stroke="{BORDER}"/>')
 
     # header
-    parts.append(f'<text x="40" y="46" font-family="{FONT}" font-size="16" fill="{FG}">'
-                 f'$ ./stats --live --user={USER}</text>')
-    parts.append(f'<rect x="40" y="58" width="{W-80}" height="1" fill="{GREEN}" opacity="0.35"/>')
+    p.append(f'<text x="{MX}" y="46" xml:space="preserve" font-family="{FONT}" font-size="16" fill="{FG}">'
+             f'<tspan fill="{BLUE}">$ </tspan>gh api /users/{USER}</text>')
+    p.append(f'<rect x="{MX}" y="60" width="{W-2*MX}" height="1" fill="{BORDER}"/>')
 
     # stat cells
-    for (label, value), x in zip(cells, cell_x):
-        parts.append(f'<text x="{x + cell_w - 16}" y="104" text-anchor="end" '
-                     f'font-family="{FONT}" font-size="30" font-weight="bold" fill="{GREEN}" '
-                     f'filter="url(#glow2)">{value}</text>')
-        parts.append(f'<text x="{x + cell_w - 16}" y="128" text-anchor="end" '
-                     f'font-family="{FONT}" font-size="12" letter-spacing="2" fill="{DIM}">{label}</text>')
+    for i, (label, value) in enumerate(cells):
+        cx = MX + step * i + step / 2
+        p.append(f'<text x="{cx:.0f}" y="112" text-anchor="middle" font-family="{FONT}" '
+                 f'font-size="34" font-weight="bold" fill="{GREEN}">{value}</text>')
+        p.append(f'<text x="{cx:.0f}" y="136" text-anchor="middle" font-family="{FONT}" '
+                 f'font-size="12" letter-spacing="2" fill="{DIM}">{label}</text>')
 
     # languages
-    parts.append(f'<text x="40" y="176" font-family="{FONT}" font-size="13" letter-spacing="3" '
-                 f'fill="{CYAN}">LANGUAGES</text>')
-    if top:
-        for i, (lang, n) in enumerate(top):
-            y = 200 + i * 24
-            pct = n / total * 100
-            w = int(520 * pct / 100)
-            parts.append(f'<text x="40" y="{y}" font-family="{FONT}" font-size="13" fill="{FG}">{lang}</text>')
-            parts.append(f'<rect x="180" y="{y - 10}" width="520" height="8" rx="4" fill="{BAR_BG}"/>')
-            parts.append(f'<rect x="180" y="{y - 10}" width="{max(w, 6)}" height="8" rx="4" fill="url(#bar)"/>')
-            parts.append(f'<text x="720" y="{y}" text-anchor="end" font-family="{FONT}" '
-                         f'font-size="12" fill="{DIM}">{pct:.1f}%</text>')
-    else:
-        parts.append(f'<text x="40" y="200" font-family="{FONT}" font-size="13" fill="{DIM}">/dev/null</text>')
+    p.append(f'<text x="{MX}" y="186" font-family="{FONT}" font-size="12" letter-spacing="3" '
+             f'fill="{BLUE}">LANGUAGES · owned repositories</text>')
+    bar_x, bar_w = MX + 130, W - MX - 130 - 60
+    for i, (lang, nbytes) in enumerate(top):
+        y = 212 + i * 22
+        pct = nbytes / total * 100
+        w = max(bar_w * pct / 100, 4)
+        p.append(f'<text x="{MX}" y="{y}" font-family="{FONT}" font-size="13" fill="{FG}">{lang}</text>')
+        p.append(f'<rect x="{bar_x}" y="{y-10}" width="{bar_w}" height="8" rx="4" fill="{BAR_BG}"/>')
+        p.append(f'<rect x="{bar_x}" y="{y-10}" width="{w:.0f}" height="8" rx="4" fill="url(#bar)"/>')
+        p.append(f'<text x="{W-MX}" y="{y}" text-anchor="end" font-family="{FONT}" '
+                 f'font-size="12" fill="{DIM}">{pct:.1f}%</text>')
 
     # footer
-    parts.append(f'<rect x="40" y="336" width="{W-80}" height="1" fill="{GREEN}" opacity="0.2"/>')
-    parts.append(f'<text x="40" y="352" font-family="{FONT}" font-size="11" fill="{FOOTER}">'
-                 f'sync: {sync} · self-hosted · no third-party trackers</text>')
-    parts.append("</svg>")
+    p.append(f'<rect x="{MX}" y="{H-34}" width="{W-2*MX}" height="1" fill="{BORDER}"/>')
+    p.append(f'<text x="{MX}" y="{H-14}" font-family="{FONT}" font-size="11" fill="{FOOTER}">'
+             f'updated {sync} · self-hosted render, no third-party widgets</text>')
+    p.append("</svg>")
 
     with open("stats.svg", "w", encoding="utf-8") as f:
-        f.write("\n".join(parts))
-    print(f"stats.svg written — stars={stars} repos={user['public_repos']} langs={len(top)}")
+        f.write("\n".join(p))
+    print(f"stats.svg written — owned={len(owned)} stars={stars} langs={len(top)}")
 
 
 if __name__ == "__main__":

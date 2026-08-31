@@ -1,172 +1,107 @@
 #!/usr/bin/env python3
-"""Generate banner.svg v2 — animated matrix/CRT terminal banner for the GitHub profile.
+"""Generate banner.svg — a clean terminal-style header card for the GitHub profile.
 
-Self-contained SVG: CSS keyframes (fade/fall/blink/glitch) + SMIL (progress bar
-width). Animates when rendered via <img>. No external deps.
+Self-contained animated SVG (CSS keyframes only). Renders when embedded via <img>.
+GitHub-native dark palette, no external dependencies.
 """
-import random
 from html import escape
 
-random.seed(1337)
+W = 1200
+FONT = "'SFMono-Regular', 'Cascadia Code', 'Fira Code', Consolas, 'Courier New', monospace"
+FS = 16
+CH = 9.62  # approx monospace advance at FS=16
 
-W, H = 1200, 560
-FONT = "Consolas, 'Cascadia Code', 'Fira Code', 'Courier New', monospace"
+BG = "#0d1117"
+SURFACE = "#161b22"
+BORDER = "#30363d"
+FG = "#e6edf3"
+DIM = "#8b949e"
+BLUE = "#58a6ff"
+GREEN = "#3fb950"
+PURPLE = "#bc8cff"
 
-# ---------------- matrix rain ----------------
-CHARS = "アイウエオカキクケコサシスセソタチツテトナニヌネノ0123456789ｱｲｳｴｵｶｷｸｹｺ$#%*<>/\\"
-COLS, COL_W, START_X = 30, 38, 14
-rain = []
-for c in range(COLS):
-    x = START_X + c * COL_W
-    for i in range(random.randint(12, 16)):
-        y0 = -random.randint(10, 140) - i * 24
-        dur = round(random.uniform(2.4, 5.2), 2)
-        delay = round(random.uniform(0, 6.0), 2)
-        bright = random.random() < 0.12
-        fill = "#d8ffe8" if bright else "#00ff41"
-        rain.append(
-            f'<text x="{x}" y="{y0}" font-family="{FONT}" font-size="20" fill="{fill}" '
-            f'opacity="{0.95 if bright else 0.55}" '
-            f'style="animation: fall {dur}s linear -{delay}s infinite">{escape(random.choice(CHARS))}</text>'
-        )
-rain_svg = "\n    ".join(rain)
-
-# ---------------- terminal boot lines ----------------
-boot = [
-    ("$ ./init.sh --stealth", "#e6edf3"),
-    ("[ ok ] kernel modules ................ ok", "#00ff41"),
-    ("[ ok ] c2 payloads ................... 3/3", "#00ff41"),
-    ("[ ok ] honeypots ..................... 7 traps", "#00ff41"),
-    ("[ ok ] media pipeline ................ up", "#00ff41"),
-    ("[ ok ] uplink encrypted ............. x25519", "#00ff41"),
-    ("[ ok ] memory daemon ................ online", "#00ff41"),
-    ("[ ok ] novelist daemon ............... writing", "#00ff41"),
-    ("$ whoami", "#e6edf3"),
-    ("hadi — security researcher & novelist", "#00d4ff"),
-    ("mandoof@matrix:~$", "#00ff41"),
+# (prompt, text, text_color) — None text = blank spacer line
+LINES = [
+    ("$ ", "whoami", FG),
+    (None, "Hadi Abdulrahman — Security Researcher & Software Engineer", FG),
+    (None, None, None),
+    ("$ ", "cat focus.txt", FG),
+    (None, "offensive security · detection engineering · applied ML · systems", DIM),
+    (None, None, None),
+    ("$ ", "cat status.txt", FG),
+    (None, "open to new opportunities", GREEN),
 ]
-LX, LY0, STEP = 206, 318, 20
-boot_svg = []
-for i, (txt, col) in enumerate(boot):
-    delay = round(0.6 + i * 0.5, 2)
-    boot_svg.append(
-        f'<text x="{LX}" y="{LY0 + i * STEP}" font-family="{FONT}" font-size="15" fill="{col}" '
-        f'style="animation: fadein 0.3s ease {delay}s both">{escape(txt)}</text>'
-    )
-last_y = LY0 + (len(boot) - 1) * STEP
-boot_svg.append(
-    f'<rect x="{LX + 150}" y="{last_y - 12}" width="9" height="15" fill="#00ff41" '
-    f'style="animation: blink 1s steps(1) 5.5s infinite" opacity="0"/>'
-)
-boot_svg = "\n    ".join(boot_svg)
 
-svg = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="1200" height="560">
+LX = 44
+TOP = 92
+LINE_H = 27
+SPACER_H = 14
+
+body = []
+y = TOP
+last_end_x = LX
+delay = 0.4
+for prompt, txt, tcol in LINES:
+    if txt is None:
+        y += SPACER_H
+        continue
+    seg = (f'<text x="{LX}" y="{y}" xml:space="preserve" font-family="{FONT}" '
+           f'font-size="{FS}" style="animation: fadein 0.35s ease {delay:.2f}s both">')
+    n = 0
+    if prompt:
+        seg += f'<tspan fill="{BLUE}">{escape(prompt)}</tspan>'
+        n += len(prompt)
+    seg += f'<tspan fill="{tcol}">{escape(txt)}</tspan></text>'
+    n += len(txt)
+    body.append(seg)
+    last_end_x = LX + n * CH
+    y += LINE_H
+    delay += 0.28
+
+cursor_y = y - LINE_H
+body.append(
+    f'<rect x="{last_end_x + 4:.0f}" y="{cursor_y - 13}" width="9" height="17" fill="{GREEN}" '
+    f'style="animation: blink 1.1s steps(1) 2.6s infinite"/>'
+)
+body = "\n  ".join(body)
+
+H = cursor_y + 58
+
+svg = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" aria-label="Hadi Abdulrahman - Security Researcher and Software Engineer">
   <defs>
-    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
-      <feGaussianBlur stdDeviation="7" result="b"/>
-      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-    <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse">
-      <rect width="4" height="2" fill="#000000" opacity="0.22"/>
-      <rect y="2" width="4" height="2" fill="#00ff41" opacity="0.035"/>
-    </pattern>
-    <radialGradient id="vig" cx="50%" cy="42%" r="75%">
-      <stop offset="60%" stop-color="#000" stop-opacity="0"/>
-      <stop offset="100%" stop-color="#000" stop-opacity="0.55"/>
-    </radialGradient>
-    <linearGradient id="termbg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#0d1117" stop-opacity="0.92"/>
-      <stop offset="1" stop-color="#050a07" stop-opacity="0.95"/>
-    </linearGradient>
-    <linearGradient id="prog" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#00ff41"/>
-      <stop offset="1" stop-color="#00d4ff"/>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="{BLUE}"/>
+      <stop offset="0.5" stop-color="{PURPLE}"/>
+      <stop offset="1" stop-color="{GREEN}"/>
     </linearGradient>
     <style>
-      @keyframes fall {{
-        0%   {{ transform: translateY(-70px); opacity: 0; }}
-        8%   {{ opacity: 1; }}
-        85%  {{ opacity: 0.9; }}
-        100% {{ transform: translateY(600px); opacity: 0; }}
-      }}
       @keyframes fadein {{
-        from {{ opacity: 0; transform: translateY(5px); }}
+        from {{ opacity: 0; transform: translateY(4px); }}
         to   {{ opacity: 1; transform: translateY(0); }}
       }}
       @keyframes blink {{
         0%, 49%   {{ opacity: 1; }}
         50%, 100% {{ opacity: 0; }}
       }}
-      @keyframes led {{
-        0%, 100% {{ opacity: 1; }}
-        50%      {{ opacity: 0.15; }}
-      }}
-      @keyframes flick {{
-        0%, 70%    {{ opacity: 1; transform: none; }}
-        71%        {{ opacity: 0.4; transform: translateX(-4px) skewX(-3deg); }}
-        72%        {{ opacity: 1; transform: none; }}
-        91.5%      {{ opacity: 1; transform: none; }}
-        92%        {{ opacity: 0.15; transform: translateX(3px) skewX(2deg); }}
-        93%        {{ opacity: 1; transform: none; }}
-        95.5%      {{ opacity: 0.4; transform: translateX(-2px); }}
-        96%        {{ opacity: 1; transform: none; }}
-      }}
-      @keyframes rshift {{
-        0%, 88%   {{ opacity: 0; }}
-        89%       {{ opacity: 0.75; }}
-        90%       {{ opacity: 0; }}
-        94%       {{ opacity: 0.5; }}
-        95%       {{ opacity: 0; }}
-      }}
-      @keyframes cshift {{
-        0%, 90%   {{ opacity: 0; }}
-        91%       {{ opacity: 0.7; }}
-        92%       {{ opacity: 0; }}
-        96.5%     {{ opacity: 0.45; }}
-        97.5%     {{ opacity: 0; }}
-      }}
     </style>
   </defs>
 
-  <rect width="{W}" height="{H}" fill="#040a06"/>
-  {rain_svg}
-  <rect width="{W}" height="{H}" fill="url(#scan)"/>
-  <rect width="{W}" height="{H}" fill="url(#vig)"/>
+  <rect width="{W}" height="{H}" rx="12" fill="{BG}"/>
+  <rect x="0.5" y="0.5" width="{W-1}" height="{H-1}" rx="12" fill="none" stroke="{BORDER}"/>
 
-  <!-- glitch title -->
-  <g text-anchor="middle">
-    <text x="600" y="152" font-family="{FONT}" font-size="110" font-weight="bold" letter-spacing="12"
-          fill="#00ff41" filter="url(#glow)" opacity="0.3">MANDOOF</text>
-    <text x="597" y="152" font-family="{FONT}" font-size="110" font-weight="bold" letter-spacing="12"
-          fill="#ff0055" style="animation: rshift 3.4s linear infinite">MANDOOF</text>
-    <text x="603" y="152" font-family="{FONT}" font-size="110" font-weight="bold" letter-spacing="12"
-          fill="#00d4ff" style="animation: cshift 3.4s linear infinite">MANDOOF</text>
-    <text x="600" y="152" font-family="{FONT}" font-size="110" font-weight="bold" letter-spacing="12"
-          fill="#00ff41" style="animation: flick 3.4s linear infinite">MANDOOF</text>
-    <text x="600" y="206" font-family="{FONT}" font-size="21" letter-spacing="7" fill="#00d4ff"
-          style="animation: fadein 0.8s ease 0.3s both">SECURITY RESEARCHER · NOVELIST · ENCRYPTED EVERYTHING</text>
-  </g>
+  <rect x="1" y="1" width="{W-2}" height="44" rx="12" fill="{SURFACE}"/>
+  <rect x="1" y="30" width="{W-2}" height="15" fill="{SURFACE}"/>
+  <circle cx="30" cy="23" r="6" fill="#ff5f57"/>
+  <circle cx="52" cy="23" r="6" fill="#febc2e"/>
+  <circle cx="74" cy="23" r="6" fill="#28c840"/>
+  <text x="{W//2}" y="28" text-anchor="middle" font-family="{FONT}" font-size="13" fill="{DIM}">hadi@github: ~/profile</text>
+  <rect x="1" y="44" width="{W-2}" height="2" fill="url(#accent)" opacity="0.9"/>
 
-  <!-- terminal window -->
-  <g>
-    <rect x="180" y="258" width="840" height="262" rx="10" fill="url(#termbg)" stroke="#00ff41" stroke-opacity="0.25"/>
-    <rect x="180" y="258" width="840" height="34" rx="10" fill="#0d1117" stroke="#00ff41" stroke-opacity="0.15"/>
-    <circle cx="206" cy="275" r="5.5" fill="#ff5f57"/>
-    <circle cx="228" cy="275" r="5.5" fill="#febc2e"/>
-    <circle cx="250" cy="275" r="5.5" fill="#28c840"/>
-    <text x="600" y="280" text-anchor="middle" font-family="{FONT}" font-size="13" fill="#8b949e">root@matrix: ~/profile</text>
-    <!-- status LEDs -->
-    <circle cx="970" cy="275" r="5" fill="#00ff41" style="animation: led 1.2s ease-in-out infinite"/>
-    <circle cx="992" cy="275" r="5" fill="#febc2e" style="animation: led 2.4s ease-in-out infinite"/>
-    <circle cx="1014" cy="275" r="5" fill="#ff0055" style="animation: led 3.6s ease-in-out infinite"/>
-    <!-- boot progress bar -->
-    <rect x="180" y="292" height="3" fill="url(#prog)" opacity="0.85">
-      <animate attributeName="width" from="0" to="840" dur="4.5s" begin="0.4s" fill="freeze"/>
-    </rect>
-    {boot_svg}
-  </g>
+  {body}
 
-  <text x="180" y="544" font-family="{FONT}" font-size="12" fill="#3d4f46">gh: mandoof1 · uptime: ∞ · stay paranoid</text>
+  <rect x="{LX}" y="{H-42}" width="{W-2*LX}" height="1" fill="{BORDER}"/>
+  <text x="{LX}" y="{H-20}" font-family="{FONT}" font-size="12" fill="{DIM}">github.com/mandoof1</text>
+  <text x="{W-LX}" y="{H-20}" text-anchor="end" font-family="{FONT}" font-size="12" fill="{DIM}">building things that hold up</text>
 </svg>
 """
 
@@ -174,4 +109,4 @@ with open("banner.svg", "w", encoding="utf-8") as f:
     f.write(svg)
 
 import os
-print(f"banner.svg v2: {os.path.getsize('banner.svg') / 1024:.1f} KB")
+print(f"banner.svg: {os.path.getsize('banner.svg') / 1024:.1f} KB  ({W}x{H})")
