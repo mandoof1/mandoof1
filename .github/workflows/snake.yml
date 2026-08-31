@@ -16,7 +16,9 @@ jobs:
         with:
           github_user_name: mandoof1
           outputs: |
-            dist/snake.svg?color_snake=#c8ffd9&color_dots=#0f2e1a,#0aa832,#00ff41,#00d4ff,#ff0055&color_background=#0d1117&color_dot_border=#00ff4122
+            dist/snake.svg?color_snake=#58a6ff&color_dots=#161b22,#0e4429,#26a641,#3fb950,#bc8cff&color_background=#0d1117
+            dist/snake-dark.svg?palette=github-dark
+            dist/snake.gif?color_snake=#58a6ff&color_dots=#161b22,#0e4429,#26a641,#3fb950,#bc8cff
       - uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
