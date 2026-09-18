@@ -17,24 +17,24 @@
 <text x="44" y="186" font-family="'SFMono-Regular', 'Cascadia Code', 'Fira Code', Consolas, 'Courier New', monospace" font-size="12" letter-spacing="3" fill="#58a6ff">LANGUAGES · owned repositories</text>
 <text x="44" y="212" font-family="'SFMono-Regular', 'Cascadia Code', 'Fira Code', Consolas, 'Courier New', monospace" font-size="13" fill="#e6edf3">Python</text>
 <rect x="174" y="202" width="646" height="8" rx="4" fill="#21262d"/>
-<rect x="174" y="202" width="465" height="8" rx="4" fill="url(#bar)"/>
-<text x="836" y="212" text-anchor="end" font-family="'SFMono-Regular', 'Cascadia Code', 'Fira Code', Consolas, 'Courier New', monospace" font-size="12" fill="#8b949e">72.0%</text>
+<rect x="174" y="202" width="480" height="8" rx="4" fill="url(#bar)"/>
+<text x="836" y="212" text-anchor="end" font-family="'SFMono-Regular', 'Cascadia Code', 'Fira Code', Consolas, 'Courier New', monospace" font-size="12" fill="#8b949e">74.3%</text>
 <text x="44" y="234" font-family="'SFMono-Regular', 'Cascadia Code', 'Fira Code', Consolas, 'Courier New', monospace" font-size="13" fill="#e6edf3">JavaScript</text>
 <rect x="174" y="224" width="646" height="8" rx="4" fill="#21262d"/>
-<rect x="174" y="224" width="91" height="8" rx="4" fill="url(#bar)"/>
-<text x="836" y="234" text-anchor="end" font-family="'SFMono-Regular', 'Cascadia Code', 'Fira Code', Consolas, 'Courier New', monospace" font-size="12" fill="#8b949e">14.1%</text>
+<rect x="174" y="224" width="90" height="8" rx="4" fill="url(#bar)"/>
+<text x="836" y="234" text-anchor="end" font-family="'SFMono-Regular', 'Cascadia Code', 'Fira Code', Consolas, 'Courier New', monospace" font-size="12" fill="#8b949e">14.0%</text>
 <text x="44" y="256" font-family="'SFMono-Regular', 'Cascadia Code', 'Fira Code', Consolas, 'Courier New', monospace" font-size="13" fill="#e6edf3">HTML</text>
 <rect x="174" y="246" width="646" height="8" rx="4" fill="#21262d"/>
-<rect x="174" y="246" width="56" height="8" rx="4" fill="url(#bar)"/>
-<text x="836" y="256" text-anchor="end" font-family="'SFMono-Regular', 'Cascadia Code', 'Fira Code', Consolas, 'Courier New', monospace" font-size="12" fill="#8b949e">8.7%</text>
+<rect x="174" y="246" width="48" height="8" rx="4" fill="url(#bar)"/>
+<text x="836" y="256" text-anchor="end" font-family="'SFMono-Regular', 'Cascadia Code', 'Fira Code', Consolas, 'Courier New', monospace" font-size="12" fill="#8b949e">7.4%</text>
 <text x="44" y="278" font-family="'SFMono-Regular', 'Cascadia Code', 'Fira Code', Consolas, 'Courier New', monospace" font-size="13" fill="#e6edf3">Shell</text>
 <rect x="174" y="268" width="646" height="8" rx="4" fill="#21262d"/>
-<rect x="174" y="268" width="18" height="8" rx="4" fill="url(#bar)"/>
-<text x="836" y="278" text-anchor="end" font-family="'SFMono-Regular', 'Cascadia Code', 'Fira Code', Consolas, 'Courier New', monospace" font-size="12" fill="#8b949e">2.8%</text>
+<rect x="174" y="268" width="15" height="8" rx="4" fill="url(#bar)"/>
+<text x="836" y="278" text-anchor="end" font-family="'SFMono-Regular', 'Cascadia Code', 'Fira Code', Consolas, 'Courier New', monospace" font-size="12" fill="#8b949e">2.4%</text>
 <text x="44" y="300" font-family="'SFMono-Regular', 'Cascadia Code', 'Fira Code', Consolas, 'Courier New', monospace" font-size="13" fill="#e6edf3">Go</text>
 <rect x="174" y="290" width="646" height="8" rx="4" fill="#21262d"/>
-<rect x="174" y="290" width="8" height="8" rx="4" fill="url(#bar)"/>
-<text x="836" y="300" text-anchor="end" font-family="'SFMono-Regular', 'Cascadia Code', 'Fira Code', Consolas, 'Courier New', monospace" font-size="12" fill="#8b949e">1.3%</text>
+<rect x="174" y="290" width="7" height="8" rx="4" fill="url(#bar)"/>
+<text x="836" y="300" text-anchor="end" font-family="'SFMono-Regular', 'Cascadia Code', 'Fira Code', Consolas, 'Courier New', monospace" font-size="12" fill="#8b949e">1.1%</text>
 <rect x="44" y="316" width="792" height="1" fill="#30363d"/>
-<text x="44" y="336" font-family="'SFMono-Regular', 'Cascadia Code', 'Fira Code', Consolas, 'Courier New', monospace" font-size="11" fill="#484f58">updated 2026-09-17 · self-hosted render, no third-party widgets</text>
+<text x="44" y="336" font-family="'SFMono-Regular', 'Cascadia Code', 'Fira Code', Consolas, 'Courier New', monospace" font-size="11" fill="#484f58">updated 2026-09-18 · self-hosted render, no third-party widgets</text>
 </svg>
