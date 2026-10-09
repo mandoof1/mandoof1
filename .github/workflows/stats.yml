@@ -23,3 +23,6 @@ jobs:
         with:
           commit_message: "chore: refresh stats card"
           file_pattern: stats.svg
+          commit_user_name: "Hadi Abdulrahman"
+          commit_user_email: "haadii2005@gmail.com"
+          commit_author: "Hadi Abdulrahman <haadii2005@gmail.com>"

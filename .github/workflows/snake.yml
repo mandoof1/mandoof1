@@ -24,3 +24,5 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: dist
           publish_branch: output
+          user_name: "Hadi Abdulrahman"
+          user_email: "haadii2005@gmail.com"
