@@ -1,20 +1,21 @@
 <div align="center">
-  <img src="banner.svg" alt="Hadi Abdulrahman — Security Researcher & Software Engineer" width="100%"/>
+  <img src="banner.svg" alt="Hadi Abdulrahman — Cybersecurity Engineering Student" width="100%"/>
 </div>
 
 <br/>
 
 ## About
 
-I'm a security researcher and software engineer who works end to end — offensive
-security and vulnerability research, defensive tooling and detection, applied ML,
-and the systems and infrastructure underneath all of it. I like problems that
-cross those boundaries: an encrypted C2 framework, a honeypot platform with an ML
-analysis backend, a fine-tuned model that reasons about ATT&CK, a browser you can
-drive over a socket.
+I'm a **cybersecurity engineering student** who learns by building things end to
+end — offensive security and vulnerability research, defensive tooling and
+detection, applied ML, and the systems and infrastructure underneath all of it. I
+like problems that cross those boundaries: an encrypted C2 framework, a honeypot
+platform with an ML analysis backend, a fine-tuned model that reasons about
+ATT&CK, a browser you can drive over a socket.
 
-Most of what I build is open source and self-hosted. **Currently open to new
-opportunities.**
+Everything here is built for research and authorized testing. Most of it is open
+source and self-hosted. **Open to cybersecurity internships and entry-level
+roles.**
 
 <br/>
 
@@ -36,10 +37,12 @@ opportunities.**
 | **[honeypot-ui](https://github.com/mandoof1/honeypot-ui)** | HoneySentinel AI — full-stack honeypot platform: protocol emulators, an analysis backend that classifies and enriches each session, and a review dashboard. |
 | **[Chimera-14B-v2](https://github.com/mandoof1/chimera-14b-v2)** | Cybersecurity reasoning LoRA for Ministral 3 14B — ATT&CK-aware blue-team analysis. |
 
-### Applied ML & AI agents
+### AI security & applied ML
 
 | Project | Description |
 | --- | --- |
+| **[aegis](https://github.com/mandoof1/aegis)** | Red-team and guardrail benchmark for tool-using LLM agents — measures how much a layered defense stack cuts prompt-injection attack success, and what it costs in utility. Offline and reproducible. |
+| **[abliteration](https://github.com/mandoof1/abliteration)** | Training-free refusal-ablation on hybrid-attention models that standard interpretability tools can't load. Refusal 78.1% → 9.4%, capability unchanged. |
 | **[Chimera-14B](https://github.com/mandoof1/chimera-14b)** | Dual-capability LoRA (tool calling + extended reasoning) for DeepSeek-R1-Distill-Qwen-14B. |
 | **[amnis](https://github.com/mandoof1/amnis)** | Persistent memory, RAG, and wiki compilation for AI agents — MCP server plus a web UI with an interactive knowledge graph. |
 | **[aether](https://github.com/mandoof1/aether)** | Local-first AI desktop agent: 23 tools, ReAct loop, native function calling, four permission tiers. Fully offline. |

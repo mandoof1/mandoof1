@@ -23,13 +23,13 @@ PURPLE = "#bc8cff"
 # (prompt, text, text_color) — None text = blank spacer line
 LINES = [
     ("$ ", "whoami", FG),
-    (None, "Hadi Abdulrahman — Security Researcher & Software Engineer", FG),
+    (None, "Hadi Abdulrahman — Cybersecurity Engineering Student", FG),
     (None, None, None),
     ("$ ", "cat focus.txt", FG),
     (None, "offensive security · detection engineering · applied ML · systems", DIM),
     (None, None, None),
     ("$ ", "cat status.txt", FG),
-    (None, "open to new opportunities", GREEN),
+    (None, "open to internships & security roles", GREEN),
 ]
 
 LX = 44
@@ -67,7 +67,7 @@ body = "\n  ".join(body)
 
 H = cursor_y + 58
 
-svg = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" aria-label="Hadi Abdulrahman - Security Researcher and Software Engineer">
+svg = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" aria-label="Hadi Abdulrahman - Cybersecurity Engineering Student">
   <defs>
     <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0" stop-color="{BLUE}"/>
