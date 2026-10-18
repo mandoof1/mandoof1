@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc"><title id="title">HoneySentinel AI — capture, analyze, investigate.</title><desc id="desc">SSH, Telnet, FTP, HTTP and HTTPS honeypots. Local analysis with Wolfram, encrypted evidence, ATT&amp;CK mapping, and investigation exports. Architecture schematic.</desc>
+<rect x="0" y="0" width="1200" height="520" rx="16" fill="#111315" stroke="none" />
+<rect x="1" y="1" width="1198" height="518" rx="16" fill="none" stroke="#34383b" />
+<text x="42" y="48" fill="#ffb454" font-family="'Courier New', monospace" font-size="15" font-weight="400" letter-spacing="1.3">01 / FLAGSHIP SYSTEM</text>
+<text x="38" y="126" fill="#f5f2ea" font-family="Arial, Helvetica, sans-serif" font-size="59" font-weight="700" letter-spacing="-2.5">HoneySentinel AI</text>
+<text x="42" y="171" fill="#b1b2ae" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="400" >A honeypot platform built around the investigation.</text>
+<path transform="translate(1118 116) scale(1.2)" d="M0 0 H26 M17 -9 L26 0 L17 9" fill="none" stroke="#ffb454" stroke-width="2"/>
+<path d="M42 203 L1158 203" fill="none" stroke="#34383b" stroke-width="1" />
+<rect x="42" y="233" width="344" height="198" rx="10" fill="#191c1f" stroke="none" />
+<text x="64" y="266" fill="#ffb454" font-family="'Courier New', monospace" font-size="15" font-weight="400" letter-spacing="1.3">01 / CAPTURE</text>
+<text x="64" y="303" fill="#f5f2ea" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" >Protocol emulation</text>
+<rect x="64" y="326" width="63" height="32" rx="5" fill="#111315" stroke="#34383b" />
+<text x="95.5" y="348" fill="#b1b2ae" font-family="'Courier New', monospace" font-size="14" font-weight="400" text-anchor="middle">SSH</text>
+<rect x="139" y="326" width="87" height="32" rx="5" fill="#111315" stroke="#34383b" />
+<text x="182.5" y="348" fill="#b1b2ae" font-family="'Courier New', monospace" font-size="14" font-weight="400" text-anchor="middle">TELNET</text>
+<rect x="238" y="326" width="63" height="32" rx="5" fill="#111315" stroke="#34383b" />
+<text x="269.5" y="348" fill="#b1b2ae" font-family="'Courier New', monospace" font-size="14" font-weight="400" text-anchor="middle">FTP</text>
+<text x="64" y="397" fill="#b1b2ae" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" >HTTP / HTTPS + decoy routing</text>
+<path transform="translate(394 333) scale(0.8)" d="M0 0 H26 M17 -9 L26 0 L17 9" fill="none" stroke="#ffb454" stroke-width="2"/>
+<rect x="428" y="233" width="344" height="198" rx="10" fill="#191c1f" stroke="none" />
+<text x="450" y="266" fill="#ffb454" font-family="'Courier New', monospace" font-size="15" font-weight="400" letter-spacing="1.3">02 / ANALYZE</text>
+<text x="450" y="303" fill="#f5f2ea" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" >Layered local analysis</text>
+<text x="450" y="343" fill="#b1b2ae" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" >Random Forest + signatures</text>
+<text x="450" y="374" fill="#f5f2ea" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="400" >Kev triage → Wolfram</text>
+<text x="450" y="405" fill="#ffb454" font-family="'Courier New', monospace" font-size="15" font-weight="400" >Local inference</text>
+<path transform="translate(780 333) scale(0.8)" d="M0 0 H26 M17 -9 L26 0 L17 9" fill="none" stroke="#ffb454" stroke-width="2"/>
+<rect x="814" y="233" width="344" height="198" rx="10" fill="#191c1f" stroke="none" />
+<text x="836" y="266" fill="#ffb454" font-family="'Courier New', monospace" font-size="15" font-weight="400" letter-spacing="1.3">03 / INVESTIGATE</text>
+<text x="836" y="303" fill="#f5f2ea" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" >Evidence you can follow</text>
+<text x="836" y="343" fill="#b1b2ae" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" >Session transcripts + ATT&amp;CK</text>
+<text x="836" y="374" fill="#b1b2ae" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" >Indicators + encrypted evidence</text>
+<text x="836" y="405" fill="#ffb454" font-family="'Courier New', monospace" font-size="15" font-weight="400" >CSV / JSON / CEF / STIX</text>
+<text x="42" y="480" fill="#ffb454" font-family="'Courier New', monospace" font-size="15" font-weight="400" letter-spacing="1.3">5 PROTOCOLS</text>
+<text x="427" y="480" fill="#b1b2ae" font-family="'Courier New', monospace" font-size="15" font-weight="400" letter-spacing="1.3">SELF-HOSTED INFERENCE</text>
+<text x="813" y="480" fill="#b1b2ae" font-family="'Courier New', monospace" font-size="15" font-weight="400" letter-spacing="1.3">FROM CAPTURE TO EXPORT</text>
+</svg>

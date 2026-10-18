@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="220" viewBox="0 0 1200 220" role="img" aria-labelledby="title desc"><title id="title">Let&#x27;s build something worth investigating.</title><desc id="desc">Contact Hadi Abdulrahman at haadii2005@gmail.com. Open to cybersecurity internships and entry-level roles.</desc>
+<rect x="0" y="0" width="1200" height="220" rx="16" fill="#111315" stroke="none" />
+<rect x="1" y="1" width="1198" height="218" rx="16" fill="none" stroke="#34383b" />
+<text x="42" y="48" fill="#ffb454" font-family="'Courier New', monospace" font-size="15" font-weight="400" letter-spacing="1.3">RESEARCH / ENGINEERING / COLLABORATION</text>
+<text x="38" y="110" fill="#f5f2ea" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="700" letter-spacing="-1.4">Let&#x27;s build something</text>
+<text x="38" y="160" fill="#f5f2ea" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="700" letter-spacing="-1.4">worth investigating.</text>
+<text x="695" y="112" fill="#f5f2ea" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="400" >haadii2005@gmail.com</text>
+<text x="695" y="151" fill="#b1b2ae" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" >Open to internships &amp; entry-level roles</text>
+<path transform="translate(1110 102) scale(1.2)" d="M0 0 H26 M17 -9 L26 0 L17 9" fill="none" stroke="#ffb454" stroke-width="2"/>
+</svg>

@@ -1,39 +1,51 @@
 # Profile settings
 
-Companion settings for the GitHub profile. These are suggested values; account
-settings and repository pins are managed separately from the profile README.
+Companion account settings for the profile. Publishing this repository updates
+its README; the bio and pins are separate GitHub account settings.
 
 **Name:** Hadi Abdulrahman
 
-**Bio:** Cybersecurity engineering student building security tools, AI agents, and fine-tuned models. Open to internships & entry-level roles. Open source. Self-hosted.
+**Bio:** Cybersecurity engineering student. Building HoneySentinel, Wolfram, and tools for secure AI systems. Open to internships and entry-level roles.
 
 **Public contact:** haadii2005@gmail.com
 
-**Website:** https://github.com/mandoof1#selected-work
+**Website:** https://github.com/mandoof1#flagship-work
 
-**Availability:** Open to cybersecurity internships and entry-level roles.
+**Repository pins, in order:**
 
-**Additional research:** `aegis` (agent security benchmarking) and `abliteration` (refusal-ablation research).
+1. `honeypot-ui` — HoneySentinel AI: protocol emulation, local analysis, and an investigation workspace.
+2. `wolfram` — The final evolution of Chimera: a security model integrated into HoneySentinel.
+3. `amnis` — Persistent memory, hybrid RAG, and knowledge graphs for AI agents.
+4. `aegis` — Attack and defense evaluation for tool-using agents.
+5. `abliteration` — Training-free model editing for hybrid-attention architectures.
 
-**Suggested repository pins, in order:**
+The main showcase intentionally contains only these five projects. Wolfram
+represents the Chimera lineage; the older model versions are not separate
+featured projects.
 
-1. `honeypot-ui` — HoneySentinel AI: honeypots, local ML, and an investigation workspace.
-2. `amnis` — Persistent memory, hybrid RAG, and knowledge graphs for AI agents.
-3. `wisp` — Lightweight encrypted C2 with a Go implant and Python server.
-4. `chimera-14b-v2` — ATT&CK-aware security reasoning LoRA for Ministral 3 14B.
-5. `aether` — A local-first desktop AI agent.
-6. `browseye` — Firefox automation and browser control over WebSocket.
+## Maintaining the artwork
 
-## Maintaining the design
+Run `python scripts/generate_assets.py` from the repository root. The generator
+uses only the Python standard library and writes 22 self-contained SVG assets,
+plus `banner.svg` as a stable fallback for earlier links.
 
-- Run `python scripts/generate_assets.py` to regenerate the banner, project cards,
-  and contact panel. The generator uses only Python's standard library.
-- Run `python gen_stats.py` to refresh the public statistics when connected to
-  GitHub. `GITHUB_TOKEN` is optional locally and provided by the scheduled Action.
-- Run `python gen_stats.py --offline` to redraw the last recorded snapshot in
-  `assets/stats.json` without changing its collection date.
-- The stats card states the date of the data and counts public, owned,
-  non-fork repositories. Language shares are by source bytes, not proficiency.
-- The stats and contribution animation refresh through the existing workflows.
-- All main artwork is served from this repository. The main profile has no
-  dependency on badge servers, externally rendered cards, or custom CSS.
+- Every panel has light and dark variants.
+- The hero, flagship case studies, and contact panel have separate mobile layouts.
+- The three research cards wrap naturally at narrower widths.
+- GitHub's native Markdown supplies the readable descriptions and links.
+- Artwork is original vector geometry; it has no external fonts, scripts, or
+  runtime image-service dependencies.
+
+The existing standalone stats card and contribution workflow remain available,
+but the profile leads with projects and evidence rather than activity widgets.
+
+## Content sources
+
+- HoneySentinel: repository README, deployment instructions, evaluation notes,
+  and `backend/app/ai/llm.py` for the Wolfram integration.
+- Wolfram: the local final adapter configuration, fine-tuning and benchmark code,
+  HoneySentinel's integration, and the owner's designation as Chimera's final version.
+- Amnis, Aegis, and Abliteration: their respective repository READMEs.
+
+Benchmark scores are left in the project reports, where the datasets, methods,
+and scope can be explained alongside the results.

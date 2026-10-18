@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc"><title id="title">Wolfram — the final evolution of Chimera.</title><desc id="desc">A MiMo 9B based security model, fine-tuned with QLoRA, deployed locally for structured analysis of honeypot transcripts. Chimera to Chimera v2 to Wolfram.</desc>
+<rect x="0" y="0" width="1200" height="520" rx="16" fill="#f5f2ea" stroke="none" />
+<rect x="1" y="1" width="1198" height="518" rx="16" fill="none" stroke="#cecfc6" />
+<text x="42" y="48" fill="#694eaa" font-family="'Courier New', monospace" font-size="15" font-weight="400" letter-spacing="1.3">02 / SECURITY LANGUAGE MODEL</text>
+<text x="36" y="150" fill="#202321" font-family="Arial, Helvetica, sans-serif" font-size="86" font-weight="700" letter-spacing="-4">Wolfram</text>
+<text x="42" y="199" fill="#5d625e" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="400" >The final evolution of Chimera.</text>
+<text x="872" y="159" fill="#694eaa" font-family="Arial, Helvetica, sans-serif" font-size="108" font-weight="700" letter-spacing="-5">9B</text>
+<text x="873" y="196" fill="#694eaa" font-family="'Courier New', monospace" font-size="16" font-weight="400" letter-spacing="1.3">MiMo / QLoRA</text>
+<path d="M42 240 L1158 240" fill="none" stroke="#cecfc6" stroke-width="1" />
+<text x="42" y="280" fill="#5d625e" font-family="'Courier New', monospace" font-size="15" font-weight="400" letter-spacing="1.3">MODEL LINEAGE</text>
+<text x="42" y="331" fill="#5d625e" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="400" >Chimera</text>
+<path transform="translate(164 323) scale(0.7)" d="M0 0 H26 M17 -9 L26 0 L17 9" fill="none" stroke="#5d625e" stroke-width="2"/>
+<text x="207" y="331" fill="#5d625e" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="400" >Chimera v2</text>
+<path transform="translate(369 323) scale(0.7)" d="M0 0 H26 M17 -9 L26 0 L17 9" fill="none" stroke="#694eaa" stroke-width="2"/>
+<text x="415" y="331" fill="#694eaa" font-family="Arial, Helvetica, sans-serif" font-size="29" font-weight="700" >Wolfram</text>
+<text x="42" y="386" fill="#202321" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="400" >Fine-tuned for the questions</text>
+<text x="42" y="424" fill="#202321" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="400" >an investigator actually asks.</text>
+<rect x="653" y="265" width="505" height="185" rx="10" fill="#eae7df" stroke="none" />
+<text x="677" y="300" fill="#694eaa" font-family="'Courier New', monospace" font-size="14" font-weight="400" letter-spacing="1.3">TRANSCRIPT → STRUCTURED ANALYSIS</text>
+<text x="677" y="340" fill="#694eaa" font-family="'Courier New', monospace" font-size="17" font-weight="400" >intent</text>
+<text x="865" y="340" fill="#5d625e" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" >what the attacker attempted</text>
+<text x="677" y="374" fill="#694eaa" font-family="'Courier New', monospace" font-size="17" font-weight="400" >mitre_techniques</text>
+<text x="865" y="374" fill="#5d625e" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" >ATT&amp;CK grounded in commands</text>
+<text x="677" y="408" fill="#694eaa" font-family="'Courier New', monospace" font-size="17" font-weight="400" >iocs</text>
+<text x="865" y="408" fill="#5d625e" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" >hosts, URLs, and files</text>
+<text x="42" y="483" fill="#694eaa" font-family="'Courier New', monospace" font-size="15" font-weight="400" letter-spacing="1.3">GGUF / llama.cpp</text>
+<text x="1158" y="483" fill="#5d625e" font-family="'Courier New', monospace" font-size="14" font-weight="400" text-anchor="end">RUNS INSIDE HONEYSENTINEL’S ANALYSIS PIPELINE</text>
+</svg>

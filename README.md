@@ -1,66 +1,75 @@
+<picture>
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/hero-mobile-dark.svg" />
+  <source media="(max-width: 600px)" srcset="assets/hero-mobile-light.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg" />
+  <img src="assets/hero-light.svg" width="100%" alt="Hadi Abdulrahman — I build systems that investigate. Cybersecurity engineering student working on honeypots, security models, and AI infrastructure." />
+</picture>
+
 <p align="center">
+  <a href="#flagship-work">Flagship work</a> &nbsp; / &nbsp;
+  <a href="#research-and-infrastructure">Research</a> &nbsp; / &nbsp;
+  <a href="mailto:haadii2005@gmail.com">Get in touch</a>
+</p>
+
+I'm **Hadi**, a cybersecurity engineering student working where **security, machine learning, and systems engineering** meet. I build the full path: capture attacker behavior, analyze the evidence, and give an investigator something useful to work with.
+
+**Open to cybersecurity internships and entry-level roles.** My projects are open source, designed for research and authorized testing, and built to run on infrastructure I control.
+
+## Flagship work
+
+<a href="https://github.com/mandoof1/honeypot-ui">
   <picture>
-    <source media="(max-width: 600px)" srcset="assets/banner-mobile.svg" />
-    <img src="banner.svg" width="100%" alt="Hadi Abdulrahman — cybersecurity engineering student. Security research. Intelligent systems." />
+    <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/honeysentinel-mobile-dark.svg" />
+    <source media="(max-width: 600px)" srcset="assets/honeysentinel-mobile-light.svg" />
+    <source media="(prefers-color-scheme: dark)" srcset="assets/honeysentinel-dark.svg" />
+    <img src="assets/honeysentinel-light.svg" width="100%" alt="HoneySentinel AI. Five-protocol honeypot platform: capture interactions, analyze them with local classifiers and models, then investigate transcripts, ATT&amp;CK techniques, and indicators. Open repository." />
   </picture>
-</p>
+</a>
 
-<p align="center">
-  <a href="mailto:haadii2005@gmail.com">Email me</a> &nbsp; / &nbsp;
-  <a href="#selected-work">Explore my work</a> &nbsp; / &nbsp;
-  <a href="https://github.com/mandoof1?tab=repositories">All repositories</a>
-</p>
+**HoneySentinel AI** captures attacker interactions across **SSH, Telnet, FTP, HTTP, and HTTPS** and turns them into encrypted evidence. Its investigation workspace brings together session transcripts, ATT&CK mappings, indicators, and exports for downstream tools.
 
-I'm **Hadi**, a **cybersecurity engineering student** who learns by building things end to end. I build tools to understand how systems break, make sense of what happens, and turn that understanding into better software.
+The self-hosted deployment blocks outbound traffic from the honeypot engine and separates ingestion from the API. **Wolfram enriches captured transcripts through local inference.**
 
-My work connects **offensive security, detection engineering, and applied AI** — from encrypted C2 frameworks and honeypot investigations to fine-tuned models and persistent memory for agents. I work across the stack, building for research and authorized testing, with a preference for open source and systems I can run myself.
-
-**Open to cybersecurity internships and entry-level roles.**
-
-## Selected work
-
-<p align="center">
-  <a href="https://github.com/mandoof1/honeypot-ui"><img src="assets/honeysentinel.svg" width="400" alt="HoneySentinel AI — honeypot platform with protocol emulation, local ML analysis, and an investigation dashboard. Open repository." /></a>
-  <a href="https://github.com/mandoof1/amnis"><img src="assets/amnis.svg" width="400" alt="Amnis — persistent memory, hybrid RAG, and a knowledge graph for AI agents, exposed through MCP. Open repository." /></a>
-  <a href="https://github.com/mandoof1/wisp"><img src="assets/wisp.svg" width="400" alt="Wisp — lightweight encrypted C2 framework with a Go implant, Python server, and X25519 forward secrecy. Open repository." /></a>
-  <a href="https://github.com/mandoof1/chimera-14b-v2"><img src="assets/chimera.svg" width="400" alt="Chimera 14B v2 — cybersecurity reasoning LoRA for Ministral 3 14B, focused on ATT&amp;CK-aware blue-team analysis. Open repository." /></a>
-</p>
-
-**AI security research:** [Aegis](https://github.com/mandoof1/aegis), a reproducible prompt-injection and guardrail benchmark for tool-using agents; and [Abliteration](https://github.com/mandoof1/abliteration), training-free refusal-ablation research on hybrid-attention models.
-
-**Also in the workshop:** [Aether](https://github.com/mandoof1/aether), a local-first desktop AI agent; [Browseye](https://github.com/mandoof1/browseye), Firefox control over WebSocket; and [Chimera 14B](https://github.com/mandoof1/chimera-14b), a LoRA combining tool calling with extended reasoning.
-
-## What I work with
-
-| Area | Tools & interests |
-| :--- | :--- |
-| **Code** | Python · Go · C / C++ · TypeScript · Bash · SQL |
-| **Security** | Vulnerability research · C2 development · Honeypots · Detection · MITRE ATT&CK |
-| **AI** | LoRA fine-tuning · RAG · Agent memory · Tool calling · MCP |
-| **Systems** | Linux · Docker · FastAPI · PostgreSQL · Redis · Nginx · Raspberry Pi |
-
-<details>
-  <summary><strong>A little more of the work</strong></summary>
-
-- [TuffyRAT C2](https://github.com/mandoof1/tuffyrat-c2) — Python control server and C++17 Windows agent for authorized red-team operations.
-- [Exim RCE research](https://github.com/mandoof1/Exim-Remote-Code-Execution) — remote code execution research against the Exim mail server.
-- [WiFi Pentest Assistant](https://github.com/mandoof1/WiFi-Pentest-Assistant-Script) — Bash tooling for authorized wireless assessments.
-- [Pi-hole UAE](https://github.com/mandoof1/pi-hole-uae) — regional ad and tracker blocking for a self-hosted network.
-- [Arch Optimization Script](https://github.com/mandoof1/Arch-Optimization-Script) — post-install tuning for Arch Linux.
-- [Pi media pipeline](https://github.com/mandoof1/pi-media-pipeline) — a documented Raspberry Pi 5 media setup.
-
-</details>
-
-<details>
-  <summary><strong>GitHub activity & languages</strong></summary>
-  <br />
-  <img src="stats.svg" width="100%" alt="Public GitHub repository statistics and language usage. The card includes its refresh date." />
-  <br /><br />
-  <img src="https://raw.githubusercontent.com/mandoof1/mandoof1/output/snake.svg" width="100%" alt="Animated contribution graph" />
-</details>
+**[Explore the system →](https://github.com/mandoof1/honeypot-ui)** &nbsp; · &nbsp; [Architecture & deployment](https://github.com/mandoof1/honeypot-ui#self-hosted-deployment) &nbsp; · &nbsp; [Evaluation & measurements](https://github.com/mandoof1/honeypot-ui#evaluation)
 
 <br />
 
-<a href="mailto:haadii2005@gmail.com"><picture><source media="(max-width: 600px)" srcset="assets/contact-mobile.svg" /><img src="assets/contact.svg" width="100%" alt="Have something interesting in mind? Let's build it. Email haadii2005@gmail.com." /></picture></a>
+<a href="https://github.com/mandoof1/wolfram">
+  <picture>
+    <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/wolfram-mobile-dark.svg" />
+    <source media="(max-width: 600px)" srcset="assets/wolfram-mobile-light.svg" />
+    <source media="(prefers-color-scheme: dark)" srcset="assets/wolfram-dark.svg" />
+    <img src="assets/wolfram-light.svg" width="100%" alt="Wolfram — the final evolution of Chimera. A MiMo 9B based security model, fine-tuned with QLoRA and deployed locally through llama.cpp. Transforms honeypot transcripts into structured intent, ATT&amp;CK techniques, and indicators. Open repository." />
+  </picture>
+</a>
 
-<p align="center"><sub>Security research · Open source · Self-hosted systems</sub></p>
+**Wolfram is the final evolution of my Chimera project.** Built on **MiMo-V2.6-Distill-Qwen-9B**, it is fine-tuned for security analysis: what an attacker intended, which objectives and ATT&CK techniques the commands support, and which indicators appear in the transcript.
+
+The project covers **fine-tuning, evaluation, GGUF deployment, and local integration with HoneySentinel**. The application validates technique IDs and checks extracted indicators against captured transcripts.
+
+**[Explore Wolfram →](https://github.com/mandoof1/wolfram)** &nbsp; · &nbsp; [See the integration](https://github.com/mandoof1/honeypot-ui/blob/main/backend/app/ai/llm.py)
+
+## Research and infrastructure
+
+<p align="center">
+  <a href="https://github.com/mandoof1/amnis"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/amnis-dark.svg" /><img src="assets/amnis-light.svg" width="265" alt="Amnis — persistent memory for AI agents. Hybrid semantic and keyword retrieval, wiki compilation, a knowledge graph, and an MCP server. Open repository." /></picture></a>
+  <a href="https://github.com/mandoof1/aegis"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/aegis-dark.svg" /><img src="assets/aegis-light.svg" width="265" alt="Aegis — prompt-injection and tool-abuse benchmarking for agents. Measures attack success and useful task completion across defense layers, with an offline simulation and real-model adapter. Open repository." /></picture></a>
+  <a href="https://github.com/mandoof1/abliteration"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/abliteration-dark.svg" /><img src="assets/abliteration-light.svg" width="265" alt="Abliteration — model internals research for hybrid-attention architectures. Extracts response-region directions, applies training-free weight edits, and evaluates behavior and capability. Open repository." /></picture></a>
+</p>
+
+## Across the stack
+
+**Systems & security** — Python · Go · C/C++ · Linux · Docker · Protocol emulation · MITRE ATT&CK<br />
+**Models & agents** — PyTorch · Transformers · QLoRA · llama.cpp · Hybrid RAG · MCP<br />
+**Applications & data** — TypeScript · React · FastAPI · PostgreSQL · Redis · SQLite
+
+<br />
+
+<a href="mailto:haadii2005@gmail.com">
+  <picture>
+    <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/contact-mobile-dark.svg" />
+    <source media="(max-width: 600px)" srcset="assets/contact-mobile-light.svg" />
+    <source media="(prefers-color-scheme: dark)" srcset="assets/contact-dark.svg" />
+    <img src="assets/contact-light.svg" width="100%" alt="Let's build something worth investigating. Email haadii2005@gmail.com. Open to internships and entry-level roles." />
+  </picture>
+</a>

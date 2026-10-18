@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="444" viewBox="0 0 400 444" role="img" aria-labelledby="title desc"><title id="title">Aegis</title><desc id="desc">Test the attack. Measure the defense. Prompt injection + tool abuse Layered guards + evaluation</desc>
+<rect x="0" y="0" width="400" height="444" rx="16" fill="#f5f2ea" stroke="none" />
+<rect x="1" y="1" width="398" height="442" rx="16" fill="none" stroke="#cecfc6" />
+<text x="26" y="37" fill="#9c4b0a" font-family="'Courier New', monospace" font-size="12" font-weight="400" letter-spacing="1.3">04 / AGENT SECURITY</text>
+<path d="M26 58 L374 58" fill="none" stroke="#cecfc6" stroke-width="1" />
+<path d="M124 79 L153 91 V120 Q153 143 124 159 Q95 143 95 120 V91 Z" fill="none" stroke="#9c4b0a" stroke-width="1.5" opacity="0.35"/>
+<path d="M188 79 L217 91 V120 Q217 143 188 159 Q159 143 159 120 V91 Z" fill="none" stroke="#9c4b0a" stroke-width="1.5" opacity="0.6499999999999999"/>
+<path d="M252 79 L281 91 V120 Q281 143 252 159 Q223 143 223 120 V91 Z" fill="none" stroke="#9c4b0a" stroke-width="1.5" opacity="0.95"/>
+<path d="M35 119 L85 119" fill="none" stroke="#9c4b0a" stroke-width="2" />
+<path transform="translate(286 119) scale(2)" d="M0 0 H26 M17 -9 L26 0 L17 9" fill="none" stroke="#9c4b0a" stroke-width="2"/>
+<text x="24" y="216" fill="#202321" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="700" letter-spacing="-1.3">Aegis</text>
+<text x="26" y="258" fill="#202321" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="400" >Test the attack.</text>
+<text x="26" y="287" fill="#202321" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="400" >Measure the defense.</text>
+<text x="26" y="335" fill="#5d625e" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" >Prompt injection + tool abuse</text>
+<text x="26" y="361" fill="#5d625e" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" >Layered guards + evaluation</text>
+<path d="M26 387 L374 387" fill="none" stroke="#cecfc6" stroke-width="1" />
+<text x="26" y="419" fill="#9c4b0a" font-family="'Courier New', monospace" font-size="11" font-weight="400" letter-spacing="1.3">ATTACKS / GUARDS / EVALS</text>
+<path transform="translate(345 414) scale(0.7)" d="M0 0 H26 M17 -9 L26 0 L17 9" fill="none" stroke="#9c4b0a" stroke-width="2"/>
+</svg>

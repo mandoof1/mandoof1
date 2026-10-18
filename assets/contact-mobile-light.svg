@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="310" viewBox="0 0 640 310" role="img" aria-labelledby="title desc"><title id="title">Let&#x27;s build something worth investigating.</title><desc id="desc">Contact Hadi Abdulrahman at haadii2005@gmail.com. Open to cybersecurity internships and entry-level roles.</desc>
+<rect x="0" y="0" width="640" height="310" rx="16" fill="#f5f2ea" stroke="none" />
+<rect x="1" y="1" width="638" height="308" rx="16" fill="none" stroke="#cecfc6" />
+<text x="34" y="49" fill="#9c4b0a" font-family="'Courier New', monospace" font-size="16" font-weight="400" letter-spacing="1.3">RESEARCH / ENGINEERING / COLLABORATION</text>
+<text x="30" y="117" fill="#202321" font-family="Arial, Helvetica, sans-serif" font-size="44" font-weight="700" letter-spacing="-1">Let&#x27;s build something</text>
+<text x="30" y="170" fill="#202321" font-family="Arial, Helvetica, sans-serif" font-size="44" font-weight="700" letter-spacing="-1">worth investigating.</text>
+<path d="M34 208 L606 208" fill="none" stroke="#cecfc6" stroke-width="1" />
+<text x="34" y="264" fill="#202321" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="400" >haadii2005@gmail.com</text>
+<path transform="translate(558 254) scale(1.1)" d="M0 0 H26 M17 -9 L26 0 L17 9" fill="none" stroke="#9c4b0a" stroke-width="2"/>
+</svg>

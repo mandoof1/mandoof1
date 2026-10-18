@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="650" viewBox="0 0 640 650" role="img" aria-labelledby="title desc"><title id="title">Wolfram — the final evolution of Chimera.</title><desc id="desc">A MiMo 9B based security model, fine-tuned with QLoRA, deployed locally for structured analysis of honeypot transcripts. Chimera to Chimera v2 to Wolfram.</desc>
+<rect x="0" y="0" width="640" height="650" rx="16" fill="#f5f2ea" stroke="none" />
+<rect x="1" y="1" width="638" height="648" rx="16" fill="none" stroke="#cecfc6" />
+<text x="34" y="48" fill="#694eaa" font-family="'Courier New', monospace" font-size="18" font-weight="400" letter-spacing="1.3">02 / SECURITY LANGUAGE MODEL</text>
+<text x="28" y="146" fill="#202321" font-family="Arial, Helvetica, sans-serif" font-size="78" font-weight="700" letter-spacing="-4">Wolfram</text>
+<text x="34" y="196" fill="#5d625e" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="400" >The final evolution of Chimera.</text>
+<path d="M34 230 L606 230" fill="none" stroke="#cecfc6" stroke-width="1" />
+<text x="30" y="335" fill="#694eaa" font-family="Arial, Helvetica, sans-serif" font-size="90" font-weight="700" letter-spacing="-4">9B</text>
+<text x="205" y="290" fill="#202321" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" >MiMo-based security model</text>
+<text x="205" y="333" fill="#5d625e" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" >QLoRA · GGUF · llama.cpp</text>
+<rect x="34" y="375" width="572" height="152" rx="10" fill="#eae7df" stroke="none" />
+<text x="56" y="410" fill="#694eaa" font-family="'Courier New', monospace" font-size="16" font-weight="400" letter-spacing="1.3">TRANSCRIPT → STRUCTURED ANALYSIS</text>
+<text x="56" y="453" fill="#202321" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="400" >Intent · Objectives · ATT&amp;CK</text>
+<text x="56" y="493" fill="#5d625e" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="400" >Indicators grounded in the transcript</text>
+<text x="34" y="589" fill="#694eaa" font-family="'Courier New', monospace" font-size="18" font-weight="400" letter-spacing="1.3">CHIMERA → CHIMERA v2 → WOLFRAM</text>
+<text x="34" y="622" fill="#5d625e" font-family="'Courier New', monospace" font-size="14" font-weight="400" letter-spacing="1.3">LOCAL MODEL / HONEYSENTINEL INTEGRATION</text>
+</svg>
