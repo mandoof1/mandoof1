@@ -1,87 +1,66 @@
-<div align="center">
-  <img src="banner.svg" alt="Hadi Abdulrahman — Cybersecurity Engineering Student" width="100%"/>
-</div>
+<p align="center">
+  <picture>
+    <source media="(max-width: 600px)" srcset="assets/banner-mobile.svg" />
+    <img src="banner.svg" width="100%" alt="Hadi Abdulrahman — cybersecurity engineering student. Security research. Intelligent systems." />
+  </picture>
+</p>
 
-<br/>
+<p align="center">
+  <a href="mailto:haadii2005@gmail.com">Email me</a> &nbsp; / &nbsp;
+  <a href="#selected-work">Explore my work</a> &nbsp; / &nbsp;
+  <a href="https://github.com/mandoof1?tab=repositories">All repositories</a>
+</p>
 
-## About
+I'm **Hadi**, a **cybersecurity engineering student** who learns by building things end to end. I build tools to understand how systems break, make sense of what happens, and turn that understanding into better software.
 
-I'm a **cybersecurity engineering student** who learns by building things end to
-end — offensive security and vulnerability research, defensive tooling and
-detection, applied ML, and the systems and infrastructure underneath all of it. I
-like problems that cross those boundaries: an encrypted C2 framework, a honeypot
-platform with an ML analysis backend, a fine-tuned model that reasons about
-ATT&CK, a browser you can drive over a socket.
+My work connects **offensive security, detection engineering, and applied AI** — from encrypted C2 frameworks and honeypot investigations to fine-tuned models and persistent memory for agents. I work across the stack, building for research and authorized testing, with a preference for open source and systems I can run myself.
 
-Everything here is built for research and authorized testing. Most of it is open
-source and self-hosted. **Open to cybersecurity internships and entry-level
-roles.**
-
-<br/>
+**Open to cybersecurity internships and entry-level roles.**
 
 ## Selected work
 
-### Offensive security
+<p align="center">
+  <a href="https://github.com/mandoof1/honeypot-ui"><img src="assets/honeysentinel.svg" width="400" alt="HoneySentinel AI — honeypot platform with protocol emulation, local ML analysis, and an investigation dashboard. Open repository." /></a>
+  <a href="https://github.com/mandoof1/amnis"><img src="assets/amnis.svg" width="400" alt="Amnis — persistent memory, hybrid RAG, and a knowledge graph for AI agents, exposed through MCP. Open repository." /></a>
+  <a href="https://github.com/mandoof1/wisp"><img src="assets/wisp.svg" width="400" alt="Wisp — lightweight encrypted C2 framework with a Go implant, Python server, and X25519 forward secrecy. Open repository." /></a>
+  <a href="https://github.com/mandoof1/chimera-14b-v2"><img src="assets/chimera.svg" width="400" alt="Chimera 14B v2 — cybersecurity reasoning LoRA for Ministral 3 14B, focused on ATT&amp;CK-aware blue-team analysis. Open repository." /></a>
+</p>
 
-| Project | Description |
-| --- | --- |
-| **[wisp](https://github.com/mandoof1/wisp)** | Lightweight encrypted C2 framework. Go implant, Python server, X25519 forward secrecy. |
-| **[tuffyrat-c2](https://github.com/mandoof1/tuffyrat-c2)** | RAT framework for authorized red-team ops — Python C2 with web UI, C++17 Windows agent, HTTP/HTTPS transport. |
-| **[Exim RCE](https://github.com/mandoof1/Exim-Remote-Code-Execution)** | Remote code execution research against the Exim mail transfer agent. |
-| **[WiFi Pentest Assistant](https://github.com/mandoof1/WiFi-Pentest-Assistant-Script)** | Menu-driven Bash tooling for authorized wireless assessments — monitor mode, handshake capture, post-exploitation. |
+**AI security research:** [Aegis](https://github.com/mandoof1/aegis), a reproducible prompt-injection and guardrail benchmark for tool-using agents; and [Abliteration](https://github.com/mandoof1/abliteration), training-free refusal-ablation research on hybrid-attention models.
 
-### Detection & defense
+**Also in the workshop:** [Aether](https://github.com/mandoof1/aether), a local-first desktop AI agent; [Browseye](https://github.com/mandoof1/browseye), Firefox control over WebSocket; and [Chimera 14B](https://github.com/mandoof1/chimera-14b), a LoRA combining tool calling with extended reasoning.
 
-| Project | Description |
-| --- | --- |
-| **[honeypot-ui](https://github.com/mandoof1/honeypot-ui)** | HoneySentinel AI — full-stack honeypot platform: protocol emulators, an analysis backend that classifies and enriches each session, and a review dashboard. |
-| **[Chimera-14B-v2](https://github.com/mandoof1/chimera-14b-v2)** | Cybersecurity reasoning LoRA for Ministral 3 14B — ATT&CK-aware blue-team analysis. |
+## What I work with
 
-### AI security & applied ML
+| Area | Tools & interests |
+| :--- | :--- |
+| **Code** | Python · Go · C / C++ · TypeScript · Bash · SQL |
+| **Security** | Vulnerability research · C2 development · Honeypots · Detection · MITRE ATT&CK |
+| **AI** | LoRA fine-tuning · RAG · Agent memory · Tool calling · MCP |
+| **Systems** | Linux · Docker · FastAPI · PostgreSQL · Redis · Nginx · Raspberry Pi |
 
-| Project | Description |
-| --- | --- |
-| **[aegis](https://github.com/mandoof1/aegis)** | Red-team and guardrail benchmark for tool-using LLM agents — measures how much a layered defense stack cuts prompt-injection attack success, and what it costs in utility. Offline and reproducible. |
-| **[abliteration](https://github.com/mandoof1/abliteration)** | Training-free refusal-ablation on hybrid-attention models that standard interpretability tools can't load. Refusal 78.1% → 9.4%, capability unchanged. |
-| **[Chimera-14B](https://github.com/mandoof1/chimera-14b)** | Dual-capability LoRA (tool calling + extended reasoning) for DeepSeek-R1-Distill-Qwen-14B. |
-| **[amnis](https://github.com/mandoof1/amnis)** | Persistent memory, RAG, and wiki compilation for AI agents — MCP server plus a web UI with an interactive knowledge graph. |
-| **[aether](https://github.com/mandoof1/aether)** | Local-first AI desktop agent: 23 tools, ReAct loop, native function calling, four permission tiers. Fully offline. |
+<details>
+  <summary><strong>A little more of the work</strong></summary>
 
-### Systems & tooling
+- [TuffyRAT C2](https://github.com/mandoof1/tuffyrat-c2) — Python control server and C++17 Windows agent for authorized red-team operations.
+- [Exim RCE research](https://github.com/mandoof1/Exim-Remote-Code-Execution) — remote code execution research against the Exim mail server.
+- [WiFi Pentest Assistant](https://github.com/mandoof1/WiFi-Pentest-Assistant-Script) — Bash tooling for authorized wireless assessments.
+- [Pi-hole UAE](https://github.com/mandoof1/pi-hole-uae) — regional ad and tracker blocking for a self-hosted network.
+- [Arch Optimization Script](https://github.com/mandoof1/Arch-Optimization-Script) — post-install tuning for Arch Linux.
+- [Pi media pipeline](https://github.com/mandoof1/pi-media-pipeline) — a documented Raspberry Pi 5 media setup.
 
-| Project | Description |
-| --- | --- |
-| **[browseye](https://github.com/mandoof1/browseye)** | Full browser control for Firefox over WebSocket — tab management, DOM manipulation, extraction, network monitoring, all from the terminal. |
-| **[pi-media-pipeline](https://github.com/mandoof1/pi-media-pipeline)** | Documented Raspberry Pi 5 media pipeline build. |
-| **[pi-hole-uae](https://github.com/mandoof1/pi-hole-uae)** | Pi-hole setup plus a curated blocklist of UAE-specific ad domains, telecom trackers, and regional ad networks. |
-| **[Arch-Optimization-Script](https://github.com/mandoof1/Arch-Optimization-Script)** | Post-install performance tuning for Arch Linux — pacman, mirrors, ZRAM, boot. |
+</details>
 
-<br/>
+<details>
+  <summary><strong>GitHub activity & languages</strong></summary>
+  <br />
+  <img src="stats.svg" width="100%" alt="Public GitHub repository statistics and language usage. The card includes its refresh date." />
+  <br /><br />
+  <img src="https://raw.githubusercontent.com/mandoof1/mandoof1/output/snake.svg" width="100%" alt="Animated contribution graph" />
+</details>
 
-## Tech
+<br />
 
-- **Languages:** Python, Go, C, C++, C#, Bash, JavaScript/TypeScript, SQL
-- **Backend & data:** FastAPI, Flask, Node.js, PostgreSQL, SQLite, Redis
-- **Infra & ops:** Linux, Docker, Nginx, Cloudflare, Raspberry Pi, GitHub Actions
-- **Security:** C2 development, exploit research, honeypots, wireless assessment, MITRE ATT&CK
-- **ML:** LoRA fine-tuning, RAG, agent loops (ReAct / function calling), MCP
+<a href="mailto:haadii2005@gmail.com"><picture><source media="(max-width: 600px)" srcset="assets/contact-mobile.svg" /><img src="assets/contact.svg" width="100%" alt="Have something interesting in mind? Let's build it. Email haadii2005@gmail.com." /></picture></a>
 
-<div align="center">
-  <img src="https://skillicons.dev/icons?i=python,go,c,cpp,cs,bash,linux,docker,git,postgres,sqlite,redis,flask,fastapi,react,nodejs,nginx,cloudflare,raspberrypi,vim&perline=10" alt="Tech stack icons"/>
-</div>
-
-<br/>
-
-## GitHub
-
-<div align="center">
-  <img src="stats.svg" width="88%" alt="GitHub stats"/>
-</div>
-
-<div align="center">
-  <img src="https://raw.githubusercontent.com/mandoof1/mandoof1/output/snake.svg" width="100%" alt="Contribution graph snake animation"/>
-</div>
-
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=mandoof1&bg_color=0d1117&color=e6edf3&line=58a6ff&point=3fb950&area=true&area_color=58a6ff&hide_border=true&custom_title=Contribution%20activity" width="100%" alt="Contribution activity graph"/>
-</div>
+<p align="center"><sub>Security research · Open source · Self-hosted systems</sub></p>

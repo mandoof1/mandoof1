@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="510" viewBox="0 0 640 510" role="img" aria-labelledby="title desc">
+<title id="title">Hadi Abdulrahman</title>
+<desc id="desc">Security research. Intelligent systems.</desc>
+
+<rect width="640" height="510" rx="20" fill="#0b1118"/>
+<rect x="1" y="1" width="638" height="508" rx="19" fill="none" stroke="#253440"/>
+<circle cx="552" cy="62" r="20" fill="none" stroke="#78dce8"/>
+<path d="M 540 62 H 564 M 552 50 V 74" stroke="#c5f277"/>
+<text x="32" y="68" fill="#c5f277" font-family="'Courier New', monospace" font-size="19" font-weight="400" letter-spacing="1">MANDOOF1 / ENGINEERING</text>
+<text x="30" y="178" fill="#f1f5ec" font-family="Arial, Helvetica, sans-serif" font-size="76" font-weight="700" letter-spacing="-3">Hadi</text>
+<text x="28" y="257" fill="#f1f5ec" font-family="Arial, Helvetica, sans-serif" font-size="68" font-weight="700" letter-spacing="-3">Abdulrahman.</text>
+<text x="32" y="327" fill="#f1f5ec" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="400" >Security research.</text>
+<text x="32" y="371" fill="#f1f5ec" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="400" >Intelligent systems.</text>
+<path d="M 32 420 H 608" stroke="#253440"/>
+<text x="32" y="464" fill="#a8b7c4" font-family="'Courier New', monospace" font-size="20" font-weight="400" >SECURITY / APPLIED AI / SYSTEMS</text>
+
+</svg>

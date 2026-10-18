@@ -1,42 +1,46 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 313" width="1200" height="313" role="img" aria-label="Hadi Abdulrahman - Cybersecurity Engineering Student">
-  <defs>
-    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#58a6ff"/>
-      <stop offset="0.5" stop-color="#bc8cff"/>
-      <stop offset="1" stop-color="#3fb950"/>
-    </linearGradient>
-    <style>
-      @keyframes fadein {
-        from { opacity: 0; transform: translateY(4px); }
-        to   { opacity: 1; transform: translateY(0); }
-      }
-      @keyframes blink {
-        0%, 49%   { opacity: 1; }
-        50%, 100% { opacity: 0; }
-      }
-    </style>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="480" viewBox="0 0 1280 480" role="img" aria-labelledby="title desc">
+<title id="title">Hadi Abdulrahman — cybersecurity engineering student</title>
+<desc id="desc">Security research. Intelligent systems. From adversarial thinking to working software. Security, applied AI, and systems.</desc>
 
-  <rect width="1200" height="313" rx="12" fill="#0d1117"/>
-  <rect x="0.5" y="0.5" width="1199" height="312" rx="12" fill="none" stroke="#30363d"/>
+<defs>
+  <radialGradient id="glow" cx="78%" cy="38%" r="65%">
+    <stop offset="0" stop-color="#1c3540"/><stop offset="1" stop-color="#0b1118"/>
+  </radialGradient>
+  <pattern id="grid" width="38" height="38" patternUnits="userSpaceOnUse">
+    <path d="M 38 0 L 0 0 0 38" fill="none" stroke="#91b9be" stroke-opacity=".07"/>
+  </pattern>
+  <linearGradient id="edge" x1="0" y1="0" x2="1" y2="1">
+    <stop stop-color="#c5f277"/><stop offset="1" stop-color="#78dce8"/>
+  </linearGradient>
+</defs>
+<rect width="1280" height="480" rx="24" fill="url(#glow)"/>
+<rect x="1" y="1" width="1278" height="478" rx="23" fill="none" stroke="#253440"/>
+<path d="M 780 1 H 1256 Q 1279 1 1279 24 V 456 Q 1279 479 1256 479 H 780 Z" fill="url(#grid)"/>
+<path d="M 48 45 H 76" stroke="#c5f277" stroke-width="3"/>
 
-  <rect x="1" y="1" width="1198" height="44" rx="12" fill="#161b22"/>
-  <rect x="1" y="30" width="1198" height="15" fill="#161b22"/>
-  <circle cx="30" cy="23" r="6" fill="#ff5f57"/>
-  <circle cx="52" cy="23" r="6" fill="#febc2e"/>
-  <circle cx="74" cy="23" r="6" fill="#28c840"/>
-  <text x="600" y="28" text-anchor="middle" font-family="'SFMono-Regular', 'Cascadia Code', 'Fira Code', Consolas, 'Courier New', monospace" font-size="13" fill="#8b949e">hadi@github: ~/profile</text>
-  <rect x="1" y="44" width="1198" height="2" fill="url(#accent)" opacity="0.9"/>
+<text x="90" y="51" fill="#c5f277" font-family="'Courier New', monospace" font-size="16" font-weight="400" letter-spacing="1.6">MANDOOF1  /  ENGINEERING &amp; RESEARCH</text>
+<text x="48" y="153" fill="#f1f5ec" font-family="Arial, Helvetica, sans-serif" font-size="82" font-weight="700" letter-spacing="-4">Hadi</text>
+<text x="44" y="242" fill="#f1f5ec" font-family="Arial, Helvetica, sans-serif" font-size="82" font-weight="700" letter-spacing="-4">Abdulrahman.</text>
+<text x="48" y="300" fill="#f1f5ec" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="400" >Security research. Intelligent systems.</text>
+<text x="48" y="339" fill="#a8b7c4" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="400" >From adversarial thinking to working software.</text>
+<path d="M 48 390 H 1232" stroke="#253440"/>
+<text x="48" y="435" fill="#c5f277" font-family="'Courier New', monospace" font-size="16" font-weight="400" >01 / SECURITY</text>
+<text x="290" y="435" fill="#78dce8" font-family="'Courier New', monospace" font-size="16" font-weight="400" >02 / APPLIED AI</text>
+<text x="550" y="435" fill="#a8b7c4" font-family="'Courier New', monospace" font-size="16" font-weight="400" >03 / SYSTEMS</text>
+<text x="1232" y="435" fill="#a8b7c4" font-family="'Courier New', monospace" font-size="14" font-weight="400" text-anchor="end">BUILD · BREAK · UNDERSTAND</text>
 
-  <text x="44" y="92" xml:space="preserve" font-family="'SFMono-Regular', 'Cascadia Code', 'Fira Code', Consolas, 'Courier New', monospace" font-size="16" style="animation: fadein 0.35s ease 0.40s both"><tspan fill="#58a6ff">$ </tspan><tspan fill="#e6edf3">whoami</tspan></text>
-  <text x="44" y="119" xml:space="preserve" font-family="'SFMono-Regular', 'Cascadia Code', 'Fira Code', Consolas, 'Courier New', monospace" font-size="16" style="animation: fadein 0.35s ease 0.68s both"><tspan fill="#e6edf3">Hadi Abdulrahman — Cybersecurity Engineering Student</tspan></text>
-  <text x="44" y="160" xml:space="preserve" font-family="'SFMono-Regular', 'Cascadia Code', 'Fira Code', Consolas, 'Courier New', monospace" font-size="16" style="animation: fadein 0.35s ease 0.96s both"><tspan fill="#58a6ff">$ </tspan><tspan fill="#e6edf3">cat focus.txt</tspan></text>
-  <text x="44" y="187" xml:space="preserve" font-family="'SFMono-Regular', 'Cascadia Code', 'Fira Code', Consolas, 'Courier New', monospace" font-size="16" style="animation: fadein 0.35s ease 1.24s both"><tspan fill="#8b949e">offensive security · detection engineering · applied ML · systems</tspan></text>
-  <text x="44" y="228" xml:space="preserve" font-family="'SFMono-Regular', 'Cascadia Code', 'Fira Code', Consolas, 'Courier New', monospace" font-size="16" style="animation: fadein 0.35s ease 1.52s both"><tspan fill="#58a6ff">$ </tspan><tspan fill="#e6edf3">cat status.txt</tspan></text>
-  <text x="44" y="255" xml:space="preserve" font-family="'SFMono-Regular', 'Cascadia Code', 'Fira Code', Consolas, 'Courier New', monospace" font-size="16" style="animation: fadein 0.35s ease 1.80s both"><tspan fill="#3fb950">open to internships &amp; security roles</tspan></text>
-  <rect x="394" y="242" width="9" height="17" fill="#3fb950" style="animation: blink 1.1s steps(1) 2.6s infinite"/>
-
-  <rect x="44" y="271" width="1112" height="1" fill="#30363d"/>
-  <text x="44" y="293" font-family="'SFMono-Regular', 'Cascadia Code', 'Fira Code', Consolas, 'Courier New', monospace" font-size="12" fill="#8b949e">github.com/mandoof1</text>
-  <text x="1156" y="293" text-anchor="end" font-family="'SFMono-Regular', 'Cascadia Code', 'Fira Code', Consolas, 'Courier New', monospace" font-size="12" fill="#8b949e">building things that hold up</text>
+<g transform="translate(1000 204)">
+  <circle r="153" fill="none" stroke="#253440"/>
+  <circle r="122" fill="none" stroke="#253440" stroke-dasharray="2 12"/>
+  <path d="M -153 0 H -174 M 153 0 H 174 M 0 -153 V -174 M 0 153 V 174" stroke="#4a626e"/>
+  <path d="M 0 -153 A 153 153 0 0 1 153 0" fill="none" stroke="#78dce8" stroke-width="2"/>
+  <path d="M 0 -92 L 82 -46 V 46 L 0 92 L -82 46 V -46 Z" fill="#12252c" stroke="url(#edge)" stroke-width="2.5"/>
+  <path d="M 0 0 L -82 -46 M 0 0 L 82 -46 M 0 0 V 92 M 0 -92 V 0" fill="none" stroke="url(#edge)" stroke-width="1.5"/>
+  <path d="M -82 46 L 0 0 L 82 46" fill="none" stroke="#78dce8" stroke-opacity=".3" stroke-dasharray="4 6"/>
+  <circle r="7" fill="#c5f277"/>
+  <circle cx="-82" cy="-46" r="4" fill="#c5f277"/>
+  <circle cx="82" cy="46" r="4" fill="#78dce8"/>
+  <circle cy="-153" r="5" fill="#78dce8"/>
+  <circle cx="-132.5" cy="76.5" r="5" fill="#c5f277"/>
+</g>
 </svg>
