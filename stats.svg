@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-labelledby="title desc"><title id="title">GitHub stats for mandoof1, collected 2026-10-29</title><desc id="desc">Public, owned, non-fork repository statistics. Language shares measure source bytes, not proficiency.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-labelledby="title desc"><title id="title">GitHub stats for mandoof1, collected 2026-10-30</title><desc id="desc">Public, owned, non-fork repository statistics. Language shares measure source bytes, not proficiency.</desc>
 <rect width="1200" height="420" rx="20" fill="#111315"/>
 <rect x="1" y="1" width="1198" height="418" rx="19" stroke="#34383b" fill="none"/>
 <text x="36" y="46" fill="#ffb454" font-family="'Courier New', monospace" font-size="18" font-weight="400" letter-spacing="1.5">OPEN-SOURCE SNAPSHOT</text>
@@ -22,8 +22,8 @@
 <text x="1164" y="271" fill="#b1b2ae" font-family="'Courier New', monospace" font-size="16" font-weight="400" text-anchor="end">23.1%</text>
 <text x="36" y="297" fill="#f5f2ea" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" >JavaScript</text>
 <rect x="265" y="286" width="790" height="7" rx="3.5" fill="#34383b"/>
-<rect x="265" y="286" width="98.0" height="7" rx="3.5" fill="#a9baf7"/>
-<text x="1164" y="297" fill="#b1b2ae" font-family="'Courier New', monospace" font-size="16" font-weight="400" text-anchor="end">12.4%</text>
+<rect x="265" y="286" width="98.8" height="7" rx="3.5" fill="#a9baf7"/>
+<text x="1164" y="297" fill="#b1b2ae" font-family="'Courier New', monospace" font-size="16" font-weight="400" text-anchor="end">12.5%</text>
 <text x="36" y="323" fill="#f5f2ea" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" >Rust</text>
 <rect x="265" y="312" width="790" height="7" rx="3.5" fill="#34383b"/>
 <rect x="265" y="312" width="84.5" height="7" rx="3.5" fill="#e8c88d"/>
@@ -33,5 +33,5 @@
 <rect x="265" y="338" width="44.2" height="7" rx="3.5" fill="#c5a5da"/>
 <text x="1164" y="349" fill="#b1b2ae" font-family="'Courier New', monospace" font-size="16" font-weight="400" text-anchor="end">5.6%</text>
 <path d="M 36 374 H 1164" stroke="#34383b"/>
-<text x="36" y="401" fill="#b1b2ae" font-family="'Courier New', monospace" font-size="14" font-weight="400" >PUBLIC, NON-FORK REPOS / UPDATED 2026-10-29</text>
+<text x="36" y="401" fill="#b1b2ae" font-family="'Courier New', monospace" font-size="14" font-weight="400" >PUBLIC, NON-FORK REPOS / UPDATED 2026-10-30</text>
 </svg>
