@@ -1,26 +1,26 @@
 {
   "user": "mandoof1",
-  "repos": 24,
-  "stars": 25,
+  "repos": 25,
+  "stars": 26,
   "followers": 10,
   "since": "2020",
-  "updated": "2026-11-15",
+  "updated": "2026-11-16",
   "languages": [
     {
       "name": "Python",
-      "percent": 63.6
+      "percent": 62.0
     },
     {
       "name": "Rust",
-      "percent": 16.2
+      "percent": 18.3
     },
     {
       "name": "JavaScript",
-      "percent": 11.7
+      "percent": 11.4
     },
     {
       "name": "Shell",
-      "percent": 3.9
+      "percent": 3.8
     },
     {
       "name": "HTML",
