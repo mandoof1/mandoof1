@@ -4,19 +4,19 @@
   "stars": 26,
   "followers": 10,
   "since": "2020",
-  "updated": "2026-11-17",
+  "updated": "2026-11-18",
   "languages": [
     {
       "name": "Python",
-      "percent": 62.0
+      "percent": 62.6
     },
     {
       "name": "Rust",
-      "percent": 18.3
+      "percent": 18.0
     },
     {
       "name": "JavaScript",
-      "percent": 11.4
+      "percent": 11.2
     },
     {
       "name": "Shell",
@@ -24,7 +24,7 @@
     },
     {
       "name": "HTML",
-      "percent": 2.5
+      "percent": 2.4
     }
   ]
 }
